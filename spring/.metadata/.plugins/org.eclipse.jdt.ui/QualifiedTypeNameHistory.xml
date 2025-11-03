@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.annotation.Annotation"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.annotation.AboutMe2"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.annotation.AboutMe3"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.proxy.MyIFImple"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Proxy"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.proxy.CheckNotNull"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.proxy.MyIF"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.InvocationHandler"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.proxy.CheckNotNullInvocationHandler"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.calc.xml.Calculator"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.calc.configuration.CalcConfiguration"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.di.xml.Calculator"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.di.javaConfiguration.CalcConfiguration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.calc.has_a.Calculator"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.calc.has_a.HasaCalculator"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.calc.all.Calculator"/>
+</qualifiedTypeNameHistroy>

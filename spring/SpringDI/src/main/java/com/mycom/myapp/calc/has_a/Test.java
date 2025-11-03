@@ -1,0 +1,24 @@
+package com.mycom.myapp.calc.has_a;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// DI 이전
+//		Calculator calculator = new Calculator();
+//		System.out.println(calculator.add(3, 7) );
+		
+		// DI (in SpringDI)
+		// 1. 스프링 framkework 환경구축
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("xml/hasa-calc-annotation.xml");
+		
+		HasaCalculator hasaCalculator = (HasaCalculator) context.getBean("hasaCalculator");	
+		System.out.println(hasaCalculator.add(3, 7));
+		
+		context.close();
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.mycom.myapp.calc.all;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class HasaCalculator {
+	
+	// interface type 필드 선언 (구현되지 않은)
+	// 생성자 주입 ( Calculator Interface 를 구현한 클래스의 객체에 )
+	// DI 가능한 컴포넌트를 scan -> Calculator Interface를 구현한 클래스 탐색 -> 객체 생성 -> 주입
+	private final Calculator calculator;
+	
+	public HasaCalculator(@Qualifier("bbb") Calculator calculator) { // Calculator를 구현한 객체 중 이름이 "aaa"인 녀석)
+		this.calculator = calculator;
+	}
+	
+	public int add(int n1, int n2) {
+		System.out.println("HasaCalculator add()");
+		return calculator.add(n1, n2);
+	}
+	
+}

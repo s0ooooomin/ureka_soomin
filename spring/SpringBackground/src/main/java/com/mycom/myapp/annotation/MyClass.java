@@ -1,0 +1,12 @@
+package com.mycom.myapp.annotation;
+
+// 클래스 & 사용 annotation
+@AboutMe(love="sports", hate="study")
+@AboutMe2(love="sports2", hate="study2")
+
+public class MyClass {
+
+	@AboutMe3(love = "sports3", hate="study3")
+	public String love;
+
+}

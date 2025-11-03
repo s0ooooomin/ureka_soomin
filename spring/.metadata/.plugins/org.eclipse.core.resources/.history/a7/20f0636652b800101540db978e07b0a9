@@ -1,0 +1,18 @@
+package com.mycom.myapp.annotation;
+
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Retention(RetentionPolicy.CLASS)
+@Target(TYPE)
+public @interface AboutMe3 {
+	// 속성들 - 추상 메소드
+	String love();
+	String hate();
+	
+	
+}

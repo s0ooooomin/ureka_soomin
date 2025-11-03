@@ -1,0 +1,25 @@
+package com.mycom.myapp.proxy;
+
+import java.lang.reflect.Proxy;
+
+// Spring framework는 원래 reflection API로 객체 생성
+// 아래 코드는 복잡도를 줄이고 proxy 이해 위해 직접 생성
+public class Test {
+
+	public static void main(String[] args) {
+
+		MyIF myIF = new MyIFImple();
+//		String param1 = "abc";
+		String param1;
+		
+		String param2 = "def";
+		
+		// 객체를 통해 직접 호출
+		myIF.m(param1, param2);
+		myIF.m(param1, param2);		
+		myIF.m2(param1, param2);
+		
+
+	}
+
+}

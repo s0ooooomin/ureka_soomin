@@ -1,0 +1,10 @@
+package com.mycom.myapp.calc.has_a;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class HasaCalculator {
+
+	Calculator calculator;
+	
+}

@@ -1,0 +1,42 @@
+package com.mycom.myapp.proxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+
+public class CheckNotNullInvocationHandler implements InvocationHandler{
+
+	private Object target;
+	public CheckNotNullInvocationHandler(Object target) {
+		this.target = target;
+	}
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		// proxy 가 할 일이 있으면 선처리, 필요에 따라 실제 객체의 메소드 호출
+		// proxy 가 할 일이 없으면 bypass [실제객체 메소드 호출, 선처리 할 게 X]
+		Method targetMethod = 
+				target.getClass().getMethod(method.getName(), method.getParameterTypes()); // 넘어온 method의 이름, 타입
+		
+		// 호출된 메소드(targetMethod)가 @CheckNotNull을 가졌는지 확인
+		if (targetMethod.isAnnotationPresent(CheckNotNull.class)) {
+			// 처리
+			return handleCheckNotNull(targetMethod, args);
+		}
+		
+		return method.invoke(target, args); // 실제 메소드 호출 (myIFImple 객체)
+	}
+	 private Object handleCheckNotNull(Method method, Object[] args ) throws Throwable{
+	        
+	        CheckNotNull annotation = method.getAnnotation(CheckNotNull.class);
+	        String[] parameterNames = annotation.parameterNames();  // IllegalArgumentException 내 메세지에 사용됨.
+	        
+	        for (int i = 0; i < args.length; i++) {
+	            if( args[i] == null ) {
+	                throw new IllegalArgumentException("Parameter " + parameterNames[i] + " is null (should be notnull)");
+	            }
+	        }
+	        
+	        // 예외 발생이 없다면 정상적으로 호출
+	        return method.invoke(target, args);
+	    }
+	
+}

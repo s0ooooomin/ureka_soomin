@@ -1,0 +1,21 @@
+package com.mycom.myapp.calc.all;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class HasaCalculator {
+	
+	
+	private final Calculator calculator;
+	
+	public HasaCalculator(Calculator calculator) {
+		this.calculator = calculator;
+	}
+	
+	public int add(int n1, int n2) {
+		System.out.println("HasaCalculator add()");
+		return calculator.add(n1, n2);
+	}
+	
+}

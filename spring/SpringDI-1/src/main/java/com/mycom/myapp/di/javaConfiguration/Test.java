@@ -1,0 +1,19 @@
+package com.mycom.myapp.di.javaConfiguration;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(CalcConfiguration.class);
+		
+		Calculator calculator = (Calculator) context.getBean("calculator");
+		System.out.println(calculator.multiply(3, 7));
+		
+		context.close();
+	
+	}
+
+}
