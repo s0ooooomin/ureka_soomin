@@ -1,10 +1,9 @@
-INDEX VERSION 1.134+C:\dev\ureka\ureka_soomin\spring\.metadata\.plugins\org.eclipse.jdt.core
-348256753.index
-3863409330.index
-2584876436.index
+INDEX VERSION 1.134+C:\dev\ureka\spring\.metadata\.plugins\org.eclipse.jdt.core
 1865797976.index
-2836361912.index
 654521539.index
-503357020.index
-3200348880.index
-4048428817.index
+1222474189.index
+2584876436.index
+2357063545.index
+3682174810.index
+4175413251.index
+3312320521.index
