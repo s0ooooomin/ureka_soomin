@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- EmpDao의 구현 -->  
+<mapper namespace="com.mycom.myapp.dao.EmpDao">
+<!-- 단, parameter가 하나면 type 명시 필요없긴 함 -->
+	<select id="listEmpLike" parameterType="string" resultType="com.mycom.myapp.dto.EmpDto">
+		select 	employeeId, first_name, last_name, email, hire_date
+		from	emp
+		where	email like concat (#{searchWord}, '%');
+	</select>
+	
+	<!-- 
+		Dto 일부 필드만 정해진 column 값으로 매핑
+		result 항목 설정으로 물리적 컬럼명 (DB) 과 자바 Dto 필드 매핑
+	 -->
+	<resultMap type="com.mycom.myapp.dto.EmpDto" id="empMap">
+		<result property="employeeId" column="employeeId"></result>
+		<result property="firstName" column="first_name"></result>
+		<result property="lastName" column="last_name"></result>
+	</resultMap>
+	
+	<select id="listEmpMap" resultMap="empMap">
+		select employeeId, first_name, last_name
+		  from emp
+	</select>
+	
+	<select id="listEmpWhereIf" parameterType="map" resultType="com.mycom.myapp.dto.EmpDto">
+		select employeeId, first_name, last_name, email, hire_date
+		  from emp
+		  <where>
+		  	<if test="firstName != null">
+		  		first_name = #{firstName} <!-- 파라미터 firstName & and 표기 X-->
+		  	</if>
+		  	<if test="lastName != null">
+		  		AND last_name = #{lastName} 
+		  	</if>
+		  	<if test="email != null">
+		  		AND email = #{email}
+		  	</if>
+		  </where>
+	</select>
+  
+</mapper>

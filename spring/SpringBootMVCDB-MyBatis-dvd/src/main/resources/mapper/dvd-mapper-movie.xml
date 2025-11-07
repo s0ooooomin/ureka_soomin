@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- MovieDao의 구현 -->  
+<mapper namespace="com.mycom.myapp.dao.MovieDao">
+
+  <select id="listMovie" resultType="com.mycom.myapp.dto.MovieDto">
+	select movie_id, movie_title, director, price 
+	from movies;
+  </select>
+  
+  <select id="detailMovie" parameterType="int" resultType="com.mycom.myapp.dto.MovieDto">
+	select 	movie_id, movie_title, director, price
+	from	movies
+  	where	movie_id 	= #{movie_id};
+  </select>
+  
+  <insert id="insertMovie" parameterType="com.mycom.myapp.dto.MovieDto" >
+  	insert into movies	(	movie_id, 	 movie_title, 	director, 	price  )
+				values 	(#{movie_id}, #{movie_title}, #{director}, #{price});
+  </insert>
+  
+  <update id="updateMovie" parameterType="com.mycom.myapp.dto.MovieDto" >
+  	update 	movies
+  	set		price		= #{price}
+  	where	movie_id 	= #{movie_id};
+  </update>
+  
+  <delete id="deleteMovie" parameterType="int" >
+  	delete
+  	from	movies
+  	where	movie_id = #{movie_id};
+  </delete>
+  
+  <!-- 검색 -->
+  <select id="listMovieLike" parameterType="string" resultType="com.mycom.myapp.dto.MovieDto">
+		select 	movie_id, movie_title, director, price
+		from	movies
+		where	movie_title	Like concat ('%', #{searchWord}, '%')
+				OR director Like concat ('%', #{searchWord}, '%');
+	</select>
+  
+</mapper>

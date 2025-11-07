@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- CustomerDao 구현 --> 
+<mapper namespace="com.mycom.myapp.dao.CustomerDao">
+
+	
+  <select id="listCustomer" resultType="com.mycom.myapp.dto.CustomerDto">
+	select 	cust_id, cust_name, cust_phone
+	from 	customers;
+  </select>
+  
+  <select id="detailCustomer" parameterType="int" resultType="com.mycom.myapp.dto.CustomerDto">
+	select 	cust_id, cust_name, cust_phone
+	from	customers
+	where	cust_id = #{cust_id};
+  </select>
+  
+  <insert id="insertCustomer" parameterType="com.mycom.myapp.dto.CustomerDto" >
+  	insert into customers	( 	cust_id,   cust_name, 	cust_phone	)
+				values 		(#{cust_id}, #{cust_name}, #{cust_phone} );
+  </insert>
+  
+  <update id="updateCustomer" parameterType="com.mycom.myapp.dto.CustomerDto" >
+  	update 	customers
+  	set		cust_phone 	= #{cust_phone}
+  	where	cust_id 	= #{cust_id};
+  </update>
+  
+  <delete id="deleteCustomer" parameterType="int" >
+  	delete
+  	from	customers
+  	where	cust_id = #{cust_id};
+  </delete>
+  
+  <!-- 검색 -->
+  <select id="listCustomerLike" parameterType="string" resultType="com.mycom.myapp.dto.CustomerDto">
+	select 	cust_id, cust_name, cust_phone
+	from	customers
+	where	cust_name	Like concat ('%', #{searchWord}, '%')
+  </select>
+  
+</mapper>

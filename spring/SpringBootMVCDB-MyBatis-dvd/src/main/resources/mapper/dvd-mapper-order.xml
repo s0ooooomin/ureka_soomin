@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- OrderDao의 구현 -->  
+<mapper namespace="com.mycom.myapp.dao.OrderDao">
+
+  <select id="listOrder" resultType="com.mycom.myapp.dto.OrderDto">
+	select 	o.order_id, c.cust_id, m.movie_id, m.movie_title, o.saleprice
+			, c.cust_name, c.cust_phone, o.borrowdate, o.returndate
+	FROM	orders o 
+	JOIN 	customers c ON o.cust_id = c.cust_id
+	JOIN 	movies m 	ON m.movie_id = o.movie_id;
+  </select>
+  
+  <select id="detailOrder" parameterType="int" resultType="com.mycom.myapp.dto.OrderDto">
+	select 	o.order_id, c.cust_id, m.movie_id, m.movie_title, o.saleprice
+			, c.cust_name, c.cust_phone, o.borrowdate, o.returndate
+	FROM	orders o 
+	JOIN 	customers c ON o.cust_id = c.cust_id
+	JOIN 	movies m 	ON m.movie_id = o.movie_id
+  	where	order_id 	= #{order_id};
+  </select>
+  
+  <update id="updateOrder" parameterType="com.mycom.myapp.dto.OrderDto" >
+  	update 	orders
+  	set 	borrowdate = #{borrowdate}
+  			, returndate = #{returndate}
+  	where	order_id = #{order_id};
+  </update>
+  
+  <delete id="deleteOrder" parameterType="int" >
+  	delete
+  	from	orders
+  	where	order_id = #{order_id};
+  </delete>
+  
+  <!-- 검색 -->
+  <select id="listOrderLike" parameterType="string" resultType="com.mycom.myapp.dto.OrderDto">
+		select 	order_id, order_title, director, price
+		from	orders
+		where	cust_name	Like concat ('%', #{searchWord}, '%')
+				OR movie_title Like concat ('%', #{searchWord}, '%');
+  </select>
+  
+</mapper>
