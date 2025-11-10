@@ -35,12 +35,17 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public int deleteOrder(int order_id) {
-		return 0;
+		return orderDao.deleteOrder(order_id);
 	}
 
 	@Override
 	public List<OrderDto> listOrderLike(String searchWord) {
-		return null;
+		return orderDao.listOrderLike(searchWord);
+	}
+
+	@Override
+	public int borrowMovie(String cust_name, String cust_phone, int movie_id) {
+		return orderDao.borrowMovieByParams(cust_name, cust_phone, movie_id);
 	}
 
 

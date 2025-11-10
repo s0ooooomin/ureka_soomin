@@ -41,5 +41,7 @@
 		where	movie_title	Like concat ('%', #{searchWord}, '%')
 				OR director Like concat ('%', #{searchWord}, '%');
 	</select>
+	
+
   
 </mapper>

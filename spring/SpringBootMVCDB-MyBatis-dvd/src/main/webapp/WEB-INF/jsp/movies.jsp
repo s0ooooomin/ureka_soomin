@@ -4,40 +4,99 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <title>영화 관리</title>
 </head>
 <body>
 	<h1>영화 관리</h1>
-	<table>
-		<thead> <!-- table-header -->
-		<tr><th>movie_id</th><th>movie_title</th><th>director</th><th>price</th>
-		</thead>
+	<div class="container mt-4">
+		<h1 class="mb-3">영화 관리</h1>
 		
-		<tbody id = "movieTbody"> <!-- table-body -->
+		<div class="input-group mb-3">
+		  <input type="text" id="searchWord" class="form-control" placeholder="검색어 입력">
+		  <button id="btnSearch" class="btn btn-outline-primary">검색하기</button>
+		</div>
+
+		<div class="table-responsive">
+			<table class="table table-hover align-middle">
+				<thead class="table-light"> <tr>
+						<th>ID</th>
+						<th>제목</th>
+						<th>감독</th>
+						<th>가격</th>
+					</tr>
+				</thead>
+				<tbody id="movieTbody"> </tbody>
+			</table>
+		</div>
 		
-		</tbody>
+		<hr>
 		
-	</table>
-	<hr>
-	<form>
-	<!-- servlet + jsp : form 객체를 전송 (action, post, submit)
-			js : action 버튼 X, id를 통해  
+		<h3>영화 정보</h3>
+		<form class="mb-3">
+			<div class="row g-3">
+				<div class="col-md-6">
+					<label for="movie_id" class="form-label">Movie ID</label>
+					<input type="text" class="form-control" name="movie_id" id="movie_id">
+				</div>
+				<div class="col-md-6">
+					<label for="movie_title" class="form-label">제목</label>
+					<input type="text" class="form-control" name="movie_title" id="movie_title">
+				</div>
+				<div class="col-md-6">
+					<label for="director" class="form-label">감독</label>
+					<input type="text" class="form-control" name="director" id="director">
+				</div>
+				<div class="col-md-6">
+					<label for="price" class="form-label">가격</label>
+					<input type="text" class="form-control" name="price" id="price">
+				</div>
+			</div>
+		</form>
+		
+		<div class="d-flex flex-wrap gap-2 my-3">
+			<button id="btnInsert" class="btn btn-primary">등록</button> 
+			<button id="btnUpdate" class="btn btn-success">수정</button> 
+			<button id="btnDelete" class="btn btn-danger">삭제</button> 
+			<button id="btnClear" class="btn btn-secondary">초기화</button>
+			
+			<button type="button" class="btn btn-info ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			  대여하기
+			</button>
+		</div>
+
+		<hr>
+		<a href="/" class="btn btn-outline-secondary mb-4">돌아가기</a>
+	</div>
 	
-	-->
-		<input type="text" name="movie_id" id="movie_id"></input><br>
-		<input type="text" name="movie_title" id="movie_title"></input><br>
-		<input type="text" name="director" id="director"></input><br>
-		<input type="text" name="price" id="price"></input><br>
-				
-	</form>
-	<hr>
-	<button id="btnInsert">등록</button> <button id="btnUpdate">수정</button> <button id="btnDelete">삭제</button> <button id="btnClear">초기화</button>
-	<button id="btnborrowMovie">대여하기</button> 
-	<hr>
-	<input type="text" id="searchWord" placeholder="검색어 입력">
-    <button id="btnSearch">검색하기</button>
-	<hr>
-	<a href="/">돌아가기</a>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h1 class="modal-title fs-5" id="exampleModalLabel">회원 정보 입력</h1>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="mb-3">
+	            <label for="cust_name" class="col-form-label">이름</label>
+	            <input type="text" class="form-control" id="cust_name">
+	          </div>
+	          <div class="mb-3">
+	            <label for="cust_phone" class="col-form-label">전화번호</label>
+	            <input type="tel" class="form-control" id="cust_phone">
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+	        <button type="button" class="btn btn-primary" id="btnborrowMovie">대여하기</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 		
 	<script>
 		// 도서 목록 요청 -> json 데이터 수신 -> 화면 목록 ui 구성 (데이터목록)
@@ -48,7 +107,7 @@
 			document.querySelector("#btnInsert").onclick = insertMovie; // 등록 버튼
 			document.querySelector("#btnUpdate").onclick = updateMovie; // 수정 버튼
 			document.querySelector("#btnDelete").onclick = deleteMovie; // 삭제 버튼
-			// document.querySelector("#btnborrowMovie").onclick = borrowMovie; // 대여 버튼
+			document.querySelector("#btnborrowMovie").onclick = borrowMovie; // 대여 버튼
 			
 			document.querySelector("#btnSearch").onclick = listMovieLike; // 검색 버튼
 			
@@ -206,14 +265,13 @@
 		async function borrowMovie() {
 			// 사용자 입력 form -> js book 객체 생성 -> Post 전송
 			// js property는 : , 으로 구분
-			let movie = {
-				movie_id: document.querySelector("#movie_id").value,
-				movie_title: document.querySelector("#movie_title").value,
-				director: document.querySelector("#director").value,
-				price: document.querySelector("#price").value
+			let order = {
+				cust_name: document.querySelector("#cust_name").value,
+				cust_phone: document.querySelector("#cust_phone").value,
+				movie_id: document.querySelector("#movie_id").value
 			};
 			
-			let urlParams = new URLSearchParams(movie);
+			let urlParams = new URLSearchParams(order);
 			// 데이터 요청, Post 타입으로 urlParams를 변수로 넣어서
 			let fetchOptions = {
 					method: "Post",

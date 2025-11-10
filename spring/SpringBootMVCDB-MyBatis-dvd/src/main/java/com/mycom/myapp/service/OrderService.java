@@ -11,6 +11,7 @@ public interface OrderService {
 	OrderDto detailOrder( int order_id );
 	int updateOrder(OrderDto orderDto);
 	int deleteOrder ( int order_id );
+	int borrowMovie(String cust_name, String cust_phone, int movie_id);
 	
 	List<OrderDto> listOrderLike(String searchWord);
 	

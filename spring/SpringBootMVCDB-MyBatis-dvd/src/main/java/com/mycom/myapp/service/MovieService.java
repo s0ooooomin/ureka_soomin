@@ -10,7 +10,6 @@ public interface MovieService {
 	int insertMovie(MovieDto movieDto);
 	int updateMovie(MovieDto movieDto);
 	int deleteMovie( int movie_id );
-	int borrowMovie(String cust_name, String cust_phone, int movie_id);
 	
 	List<MovieDto> listMovieLike(String searchWord);
 }
