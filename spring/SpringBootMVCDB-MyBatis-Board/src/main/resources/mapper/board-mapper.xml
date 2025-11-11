@@ -6,6 +6,9 @@
 <!-- BoardDao의 구현 -->  
 <mapper namespace="com.mycom.myapp.board.dao.BoardDao">
 
-	
+	<insert id="insertBoard" parameterType="com.mycom.myapp.board.dto.BoardDto">
+		INSERT INTO board 	( user_seq, 	title, 	content	)
+					VALUES 	(${userSeq}, ${title}, ${content} )
+	</insert>
   
 </mapper>

@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\dev\ureka\spring\SpringBootMVC-FilterInterceptor\src\main\java\com\mycom\myapp\filter\MyFilter.java"/>
 			<item value="C:\dev\ureka\spring\SpringBootMVC"/>
 		</list>
 		<list key="projectNameTemplate">

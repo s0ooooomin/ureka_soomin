@@ -1,7 +1,0 @@
-package com.mycom.myapp.annotation;
-
-public class Test {
-	public static void main(String[] args) {
-		Class.forName("com.mycom.myapp.annotation")
-	}
-}

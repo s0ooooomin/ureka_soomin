@@ -22,7 +22,9 @@ public class LoginController {
 	public LoginController(LoginService loginService) {
 		this.loginService = loginService;
 	}
-	
+	// session.setAttribute("userDto", userDto)
+	// 1. 로그인 여부 확인
+	// 2. 필요에 따라 백엔드에서 사용자 정보 활용
 	@PostMapping("/login")
 	public Map<String, String> login(UserDto Dto, HttpSession session) {
 		Map<String, String> map = new HashMap<>();

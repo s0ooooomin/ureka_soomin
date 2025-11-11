@@ -1,6 +1,0 @@
-package com.mycom.myapp.calc.all;
-
-// interface 에는 @Component (X) 실제 구현 객체(CalculatorImpl)에다가
-public interface Calculator {
-	int add(int n1, int n2);
-}
