@@ -2,9 +2,9 @@ package com.mycom.myapp.board.dto;
 
 public class BoardParamDto {
 	// 목록 (백 -> 프론트) 파라미터 전달
-	private int limit;
-	private int offset;
-	private String searchWord; // 제목 검색
+	private int limit;			// 페이지네이션
+	private int offset;			// 페이지네이션
+	private String searchWord; 	// 제목 검색
 	
 	// 상세
 	private int boardId; // key값

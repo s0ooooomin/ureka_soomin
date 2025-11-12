@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
@@ -49,8 +49,8 @@
 	
 	<!-- 검색창 -->
 	<div class="input-group mt-3">
-	  <input type="text" class="form-control" id="searchWord" placeholder="검색어를 입력하세요.">
-	  <button class="btn btn-outline-secondary" type="button" id="btnsearch">검색</button>
+	  <input type="text" class="form-control" id="inputSearchWord" placeholder="검색어를 입력하세요.">
+	  <button class="btn btn-outline-secondary" type="button" id="btnSearchWord">검색</button>
 	</div>
 	
 	
@@ -69,6 +69,10 @@
 	    
 	  </tbody>
 	</table>
+	
+	<div id="paginationWrapper">
+		
+	</div>
 
 
 	<!-- Button trigger modal -->
@@ -186,14 +190,46 @@
 
 <script src="/assets/js/util.js"></script>
 <script>
+	// 페이지 요청과 데이터 요청을 구분해서 header에 ajax:true 항목을 보내는 더 효율적인 코드는 
+	// #1.직접 fetch 포함된 사용자정의function() 만들기
+	// #2.이미 만들어진 axios같은 통신 library 를 사용하기
+
+	// 전역변수
+	// 모달
 	const insertModal = new bootstrap.Modal( document.querySelector("#insertBoardModal"));
 	const detailModal = new bootstrap.Modal( document.querySelector("#detailBoardModal"));
 	const updateModal = new bootstrap.Modal( document.querySelector("#updateBoardModal"));
+	
+	// 페이징 처리 (limit, offset, searchWord)
+	let LIST_ROW_COUNT = 10;	// == LIMIT (화면에 게시글을 몇개 행으로 보여줄 것인가?) // Pagination Factor #1
+	let OFFSET = 0;				// 몇개를 건너뛰고 보여줄 것인가?
+	let SEARCH_WORD = "";		// 검색어
+	
+	let PAGE_LINK_COUNT = 3;	// Pagination Factor #2 페이지네이션 링크 (1 2 3 4 5 ...)
+	let CURRENT_PAGE_INDEX = 1; // Pagination Factor #3 현재 페이지 링크 INDEX
+	let TOTAL_LIST_COUNT = 0;	// Pagination Factor #4 게시글 전체 개수
 	
 	// 창이 띄워져 있는 동안 발생할 수 있는 일
 	window.onload = function() {
 		// 글 목록
 		listBoard();
+		
+		// 검색어 목록
+		document.querySelector("#btnSearchWord").onclick = function() {
+			// #1. 검색 버튼이 검색어 전용일 경우
+			let searchWord = document.querySelector("#inputSearchWord").value;
+			if (searchWord == '') {
+				alert("검색어를 입력하세요.");
+
+				SEARCH_WORD = searchWord;
+				listBoard();
+			} else {
+				// #2. 검색어 X -> 전체목록, 검색어 O -> 검색목록
+				SEARCH_WORD = document.querySelector("#inputSearchWord").value;
+				listBoard();
+			}
+			
+		}
 		
 		// 글 등록 모달 창 띄우기
 		document.querySelector("#btnInsertPage").onclick = function() {
@@ -245,24 +281,30 @@
 			deleteBoard();
 		}
 
-		// 글 검색
-		document.querySelector("#btnsearch").onclick = function() {
-			listBoardSearch();
-		}
-		
 	}
 	
 	async function listBoard() {
+		let fetchOptions = {
+			   headers: {
+				   ajax:"true"
+			   }
+	    }
+		
 		let url = "/boards/list";
-		let response = await fetch(url);
+		let urlParams = "?limit=" + LIST_ROW_COUNT + "&offset=" + OFFSET + "&searchWord=" + SEARCH_WORD;
+		let response = await fetch(url + urlParams, fetchOptions);
 		let data = await response.json();
 
 		console.log(data);
 		
 		if (data.result == "success") {
 			makeListHtml(data.list);
+			TOTAL_LIST_COUNT = data.count;
+			addPagination();
 		}else if (data.result == "fail") {
 			alert("글 목록 로드 중 오류가 발생하였습니다ㅜ.ㅜ");
+		}else if (data.result == "login") {
+			window.location.href = "/pages/login";
 		}
 	}
 	
@@ -301,10 +343,30 @@
         	}
         });
     }
-   // 상세
+    
+    // 페이지네이션 (여러곳에서 사용가능)
+    // 
+	function addPagination() {
+		console.log (LIST_ROW_COUNT, PAGE_LINK_COUNT, CURRENT_PAGE_INDEX, TOTAL_LIST_COUNT);
+		makePaginationHtml(LIST_ROW_COUNT, PAGE_LINK_COUNT, CURRENT_PAGE_INDEX, TOTAL_LIST_COUNT, "paginationWrapper");
+    }
+    // 9룰 누름 -> movePage(9) 호출 & 현재페이지 9
+    // -> 
+    function movePage(pageIndex) {
+    	CURRENT_PAGE_INDEX = pageIndex;
+    	OFFSET = (pageIndex - 1) * LIST_ROW_COUNT;
+    	listBoard();
+    }
+    
+   	// 상세
     async function detailBoard(boardId) {
-    	let url = "/boards/detail/" + boardId;
-		let response = await fetch(url);
+	   let fetchOptions = {
+			   headers: {
+				   ajax:"true"
+			   }
+	   }
+	  	let url = "/boards/detail/" + boardId;
+		let response = await fetch(url, fetchOptions);
 		let data = await response.json();
 		
 		console.log(data);
@@ -313,6 +375,8 @@
 			makeDetailHtml(data.dto);
 		}else if (data.result == "fail") {
 			alert("글 상세 로드 중 오류가 발생하였습니다ㅜ.ㅜ");
+		}else if (data.result == "login") {
+			window.location.href = "/pages/login";
 		}
     }
    
@@ -353,6 +417,9 @@
 		});
 		
 		let fetchOptions = {
+				headers: {
+				   ajax:"true"
+			    },
 				method: "post",
 				body:  urlParams
 		}
@@ -368,6 +435,8 @@
 			listBoard();
 		}else if (data.result == "fail") {
 			alert("글 등록 중 오류가 발생하였습니다ㅜ.ㅜ");
+		}else if (data.result == "login") {
+			window.location.href = "/pages/login";
 		}
 		
 		// 모달 창 닫기
@@ -388,6 +457,9 @@
 		});
 		
 		let fetchOptions = {
+				headers: {
+				   ajax:"true"
+			    },
 				method: "post",
 				body:  urlParams
 		}
@@ -405,6 +477,8 @@
 			listBoard();
 		}else if (data.result == "fail") {
 			alert("글 수정 중 오류가 발생하였습니다ㅜ.ㅜ");
+		}else if (data.result == "login") {
+			window.location.href = "/pages/login";
 		}
 		
 		// 모달 창 닫기
@@ -414,8 +488,14 @@
 	async function deleteBoard() {
 		let boardId = document.querySelector("#detailBoardModal").getAttribute("data-boardId");
 		
+		let fetchOptions = {
+				headers: {
+					ajax:"true"
+				}
+		}
+		
 		let url = "/boards/delete/" + boardId
-		let response = await fetch(url);
+		let response = await fetch(url, fetchOptions);
 		let data = await response.json();
 		
 		console.log(data);
@@ -424,7 +504,10 @@
 			alert("글이 삭제되었습니다.");
 		}else if (data.result == "fail") {
 			alert("글 삭제 중 오류가 발생하였습니다ㅜ.ㅜ");
+		}else if (data.result == "login") {
+			window.location.href = "/pages/login";
 		}
+		
 		detailModal.hide();
 		listBoard();
 	}

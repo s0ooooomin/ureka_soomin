@@ -18,11 +18,15 @@ public class BoardServiceImpl implements BoardService {
 	}
 	
 	@Override
-	public BoardResultDto listBoard() {
+	public BoardResultDto listBoard(BoardParamDto boardParamDto) {
 		BoardResultDto boardResultDto = new BoardResultDto();
 		try {
-			List<BoardDto> list = boardDao.listBoard();
+			List<BoardDto> list = boardDao.listBoard(boardParamDto);
 			boardResultDto.setList(list);
+			
+			int count = boardDao.listBoardTotalCount();
+			boardResultDto.setCount(count);
+			
 			boardResultDto.setResult("success");
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -32,28 +36,47 @@ public class BoardServiceImpl implements BoardService {
 		return boardResultDto;
 	}
 	
-	  @Override
-	    public BoardResultDto detailBoard(BoardParamDto boardParamDto) {
-	        BoardResultDto boardResultDto = new BoardResultDto();
-	        
-	        try {
-	            BoardDto boardDto = boardDao.detailBoard(boardParamDto); // 게시글 1건 데이터
-	            // same user
-	            // boardDto.getUserSeq() <= 현재 게시글의 글 작성자 userSeq
-	            // boardParamDto.getUserSeq() <= 현재 게시글의 조회자 userSeq
-	            if( boardDto.getUserSeq() == boardParamDto.getUserSeq() ) { // 내가 쓴 글이라면
-	                boardDto.setSameUser(true);
-	            }else {
-	                boardDto.setSameUser(false);
-	            }
-	            boardResultDto.setDto(boardDto);
-	            boardResultDto.setResult("success");
-	        }catch(Exception e) {
-	            e.printStackTrace();
-	            boardResultDto.setResult("fail");
-	        }
-	        return boardResultDto;
-	    }
+	@Override
+	public BoardResultDto listBoardSearchWord(BoardParamDto boardParamDto) {
+		BoardResultDto boardResultDto = new BoardResultDto();
+		try {
+			List<BoardDto> list = boardDao.listBoardSearchWord(boardParamDto);
+			boardResultDto.setList(list);
+			
+			int count = boardDao.listBoardSearchWordTotalCount(boardParamDto);
+			boardResultDto.setCount(count);
+			
+			boardResultDto.setResult("success");
+		}catch(Exception e) {
+			e.printStackTrace();
+			boardResultDto.setResult("fail");
+		}
+		
+		return boardResultDto;
+	}
+	
+	@Override
+    public BoardResultDto detailBoard(BoardParamDto boardParamDto) {
+        BoardResultDto boardResultDto = new BoardResultDto();
+        
+        try {
+            BoardDto boardDto = boardDao.detailBoard(boardParamDto); // 게시글 1건 데이터
+            // same user
+            // boardDto.getUserSeq() <= 현재 게시글의 글 작성자 userSeq
+            // boardParamDto.getUserSeq() <= 현재 게시글의 조회자 userSeq
+            if( boardDto.getUserSeq() == boardParamDto.getUserSeq() ) { // 내가 쓴 글이라면
+                boardDto.setSameUser(true);
+            }else {
+                boardDto.setSameUser(false);
+            }
+            boardResultDto.setDto(boardDto);
+            boardResultDto.setResult("success");
+        }catch(Exception e) {
+            e.printStackTrace();
+            boardResultDto.setResult("fail");
+        }
+        return boardResultDto;
+    }
 	
 	@Override
 	public BoardResultDto insertBoard(BoardDto boardDto) {
@@ -110,6 +133,8 @@ public class BoardServiceImpl implements BoardService {
 		
 		return boardResultDto;
 	}
+
+
 
 	
 

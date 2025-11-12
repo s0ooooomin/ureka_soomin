@@ -10,8 +10,13 @@ import com.mycom.myapp.board.dto.BoardParamDto;
 @Mapper
 public interface BoardDao {
 
-	// 목록
-	List<BoardDto> listBoard();
+	// 목록 & 목록별 전체 건수
+	List<BoardDto> listBoard(BoardParamDto boardParamDto); // 전체 목록 ( limit, offset )
+	int listBoardTotalCount(); // 전체 건수
+	
+	List<BoardDto> listBoardSearchWord(BoardParamDto boardParamDto); // 서치 결과 목록 (limit, offset, searchWord)
+	int listBoardSearchWordTotalCount(BoardParamDto boardParamDto); // 검색 전체 건수 (searchWord 필요) 
+	
 	// 상세
 	BoardDto detailBoard(BoardParamDto boardParamDto);
 	// 등록

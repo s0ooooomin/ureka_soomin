@@ -1,5 +1,6 @@
 package com.mycom.myapp.board.controller;
 
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,9 +27,17 @@ public class BoardController {
 	}
 	
 	// 목록
+	// 파라미터에 searchWord O -> 검색목록, X -> 전체 목록
+	// 전체 목록도 limit, offset을 가지도록 수정.
 	@GetMapping("/list")
-	public BoardResultDto listBoard() {
-		return boardService.listBoard();
+	public BoardResultDto listBoard(BoardParamDto boardParamDto) {
+		BoardResultDto boardResultDto = null;
+		if ( Strings.isEmpty ( boardParamDto.getSearchWord() ) ) {
+			boardResultDto = boardService.listBoard(boardParamDto);
+		}else {
+			boardResultDto = boardService.listBoardSearchWord(boardParamDto);
+		}
+		return boardResultDto;
 	}
 
 	// 상세
