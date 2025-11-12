@@ -4,38 +4,61 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <title>회원 관리</title>
 </head>
 <body>
-	<h1>회원 관리</h1>
-	<table>
-		<thead> <!-- table-header -->
-		<tr><th>cust_id</th><th>cust_name</th><th>cust_phone</th>
-		</thead>
+	<div class="container mt-4">
+		<h1 class="text-center mb-3">회원 관리</h1>
+
+		<div class="input-group mb-3">
+		  <input type="text" id="searchWord" class="form-control" placeholder="고객명 입력">
+		  <button id="btnSearch" class="btn btn-outline-primary">검색</button>
+		</div>
+
+		<div class="table-responsive">
+			<table class="table table-hover align-middle">
+				<thead class="table-light"> <tr>
+						<th>cust_id</th>
+						<th>cust_name</th>
+						<th>cust_phone</th>
+					</tr>
+				</thead>
+				<tbody id = "customerTbody"> </tbody>
+			</table>
+		</div>
 		
-		<tbody id = "customerTbody"> <!-- table-body -->
+		<hr>
 		
-		</tbody>
+		<h3>회원 정보</h3>
+		<form class="mb-3">
+			<div class="row g-3">
+				<div class="col-md-6">
+					<label for="cust_id" class="form-label">Customer ID</label>
+					<input type="text" class="form-control" name="cust_id" id="cust_id">
+				</div>
+				<div class="col-md-6">
+					<label for="cust_name" class="form-label">이름</label>
+					<input type="text" class="form-control" name="cust_name" id="cust_name">
+				</div>
+				<div class="col-md-6">
+					<label for="cust_phone" class="form-label">전화번호</label>
+					<input type="text" class="form-control" name="cust_phone" id="cust_phone">
+				</div>
+			</div>
+		</form>
 		
-	</table>
-	<hr>
-	<form>
-	<!-- servlet + jsp : form 객체를 전송 (action, post, submit)
-			js : action 버튼 X, id를 통해  
-	
-	-->
-		<input type="text" name="cust_id" id="cust_id"></input><br>
-		<input type="text" name="cust_name" id="cust_name"></input><br>
-		<input type="text" name="cust_phone" id="cust_phone"></input><br>
-				
-	</form>
-	<hr>
-	<button id="btnInsert">등록</button> <button id="btnUpdate">수정</button> <button id="btnDelete">삭제</button> <button id="btnClear">초기화</button>
-	<hr>
-	<input type="text" id="searchWord" placeholder="고객명 입력">
-    <button id="btnSearch">검색</button>
-	<hr>
-	<a href="/">돌아가기</a>
+		<div class="d-flex flex-wrap gap-2 my-3">
+			<button id="btnInsert" class="btn btn-primary">등록</button> 
+			<button id="btnUpdate" class="btn btn-success">수정</button> 
+			<button id="btnDelete" class="btn btn-danger">삭제</button> 
+			<button id="btnClear" class="btn btn-secondary">초기화</button>
+		</div>
+		
+		<hr>
+		<a href="/" class="btn btn-outline-secondary mb-4">돌아가기</a>
+	</div>
 		
 	<script>
 		// 도서 목록 요청 -> json 데이터 수신 -> 화면 목록 ui 구성 (데이터목록)
@@ -194,7 +217,6 @@
 				alert("회원 삭제 실패 ㅜㅜ");
 			}
 		}
-		
 		
 	</script>
 </body>

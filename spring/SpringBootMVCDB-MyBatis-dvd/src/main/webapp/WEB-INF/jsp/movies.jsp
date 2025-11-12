@@ -9,9 +9,8 @@
 <title>영화 관리</title>
 </head>
 <body>
-	<h1>영화 관리</h1>
 	<div class="container mt-4">
-		<h1 class="mb-3">영화 관리</h1>
+		<h1 class="text-center mb-3">영화 관리</h1>
 		
 		<div class="input-group mb-3">
 		  <input type="text" id="searchWord" class="form-control" placeholder="검색어 입력">
@@ -189,7 +188,6 @@
 			// 사용자 입력 form -> js book 객체 생성 -> Post 전송
 			// js property는 : , 으로 구분
 			let movie = {
-				movie_id: document.querySelector("#movie_id").value,
 				movie_title: document.querySelector("#movie_title").value,
 				director: document.querySelector("#director").value,
 				price: document.querySelector("#price").value

@@ -6,9 +6,34 @@
 <!-- BoardDao의 구현 -->  
 <mapper namespace="com.mycom.myapp.board.dao.BoardDao">
 
+	<select id="listBoard" resultType="com.mycom.myapp.board.dto.BoardDto">
+		SELECT	b.board_id, b.user_seq, u.user_name, u.user_profile_image, b.title, b.content, b.reg_dt, b.read_count
+		FROM	board b, users u
+		WHERE	b.user_seq = u.user_seq;
+	</select>
+
+	<select id="detailBoard" parameterType="com.mycom.myapp.board.dto.BoardParamDto" resultType="com.mycom.myapp.board.dto.BoardDto">
+		SELECT	b.board_id, b.user_seq, u.user_name, u.user_profile_image, b.title, b.content, b.reg_dt, b.read_count
+		FROM	board b, users u
+		WHERE	b.user_seq = u.user_seq
+		AND		b.board_id = #{boardId};
+	</select>
+	
 	<insert id="insertBoard" parameterType="com.mycom.myapp.board.dto.BoardDto">
 		INSERT INTO board 	( user_seq, 	title, 	content	)
-					VALUES 	(${userSeq}, ${title}, ${content} )
+					VALUES 	(#{userSeq}, #{title}, #{content} )
 	</insert>
+	
+	<update id="updateBoard" parameterType="com.mycom.myapp.board.dto.BoardDto">
+		UPDATE	board
+		SET		title 	= #{title},
+				content = #{content}
+		WHERE 	board_id = #{boardId};
+	</update>
+	
+	<delete id="deleteBoard" parameterType="int" >
+		DELETE 	FROM board
+		WHERE 	board_id = #{boardId};
+	</delete>
   
 </mapper>

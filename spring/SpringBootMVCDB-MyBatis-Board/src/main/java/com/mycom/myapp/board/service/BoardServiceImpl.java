@@ -1,9 +1,12 @@
 package com.mycom.myapp.board.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.mycom.myapp.board.dao.BoardDao;
 import com.mycom.myapp.board.dto.BoardDto;
+import com.mycom.myapp.board.dto.BoardParamDto;
 import com.mycom.myapp.board.dto.BoardResultDto;
 
 @Service
@@ -15,17 +18,52 @@ public class BoardServiceImpl implements BoardService {
 	}
 	
 	@Override
+	public BoardResultDto listBoard() {
+		BoardResultDto boardResultDto = new BoardResultDto();
+		try {
+			List<BoardDto> list = boardDao.listBoard();
+			boardResultDto.setList(list);
+			boardResultDto.setResult("success");
+		}catch(Exception e) {
+			e.printStackTrace();
+			boardResultDto.setResult("fail");
+		}
+		
+		return boardResultDto;
+	}
+	
+	  @Override
+	    public BoardResultDto detailBoard(BoardParamDto boardParamDto) {
+	        BoardResultDto boardResultDto = new BoardResultDto();
+	        
+	        try {
+	            BoardDto boardDto = boardDao.detailBoard(boardParamDto); // 게시글 1건 데이터
+	            // same user
+	            // boardDto.getUserSeq() <= 현재 게시글의 글 작성자 userSeq
+	            // boardParamDto.getUserSeq() <= 현재 게시글의 조회자 userSeq
+	            if( boardDto.getUserSeq() == boardParamDto.getUserSeq() ) { // 내가 쓴 글이라면
+	                boardDto.setSameUser(true);
+	            }else {
+	                boardDto.setSameUser(false);
+	            }
+	            boardResultDto.setDto(boardDto);
+	            boardResultDto.setResult("success");
+	        }catch(Exception e) {
+	            e.printStackTrace();
+	            boardResultDto.setResult("fail");
+	        }
+	        return boardResultDto;
+	    }
+	
+	@Override
 	public BoardResultDto insertBoard(BoardDto boardDto) {
 		BoardResultDto boardResultDto = new BoardResultDto();
 		
 		try {
 			// boardDao를 이용한 insert
 			int ret = boardDao.insertBoard(boardDto);
-			if (ret == 1) {
-				boardResultDto.setResult("success");
-			}else {
-				boardResultDto.setResult("fail");
-			}
+			if (ret == 1) boardResultDto.setResult("success");
+			else boardResultDto.setResult("fail");
 		}catch(Exception e) {
 			e.printStackTrace();
 			boardResultDto.setResult("fail");
@@ -34,6 +72,48 @@ public class BoardServiceImpl implements BoardService {
 		
 		return boardResultDto;
 	}
+
+	@Override
+	public BoardResultDto updateBoard(BoardDto boardDto) {
+		BoardResultDto boardResultDto = new BoardResultDto();
+		
+		try {
+			// boardDao를 이용한 insert
+			int ret = boardDao.updateBoard(boardDto);
+			if (ret == 1) boardResultDto.setResult("success");
+			else boardResultDto.setResult("fail");
+
+		}catch(Exception e) {
+			e.printStackTrace();
+			boardResultDto.setResult("fail");
+		}
+		
+		
+		return boardResultDto;
+	}
+
+	@Override
+	public BoardResultDto deleteBoard(int boardId) {
+		BoardResultDto boardResultDto = new BoardResultDto();
+		
+		try {
+			// boardDao를 이용한 insert
+			int ret = boardDao.deleteBoard(boardId);
+			if (ret == 1) boardResultDto.setResult("success");
+			else boardResultDto.setResult("fail");
+
+		}catch(Exception e) {
+			e.printStackTrace();
+			boardResultDto.setResult("fail");
+		}
+		
+		
+		return boardResultDto;
+	}
+
+	
+
+
 
 	
 }

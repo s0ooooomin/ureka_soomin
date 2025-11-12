@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.dao.MovieDao"/>
@@ -9,9 +8,7 @@
     <fullyQualifiedTypeName name="com.mycom.myapp.dao.EmpDao"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.controller.EmpController"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.service.EmpService"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.dto.EmpDto"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.controller.MovieController"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.dto.MovieDTO"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.service.MovieServiceImpl"/>
@@ -24,11 +21,8 @@
     <fullyQualifiedTypeName name="com.mycom.myapp.user.dto.UserResultDto"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.auth.service.LoginServiceImpl"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.auth.dao.LoginDao"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.auth.controller.LoginController"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.auth.service.LoginService"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
@@ -39,8 +33,6 @@
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="jakarta.servlet.ServletException"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="jakarta.websocket.Session"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.HandlerInterceptor"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
@@ -49,15 +41,23 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.interceptor.LoginInterceptor"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.common.LoginInterceptor"/>
-    <fullyQualifiedTypeName name="com.mycom.myapp.user.dto.UserDto"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.time.ZoneId"/>
-    <fullyQualifiedTypeName name="com.mycom.myapp.board.dto.BoardDto"/>
-    <fullyQualifiedTypeName name="com.mycom.myapp.board.dto.BoardResultDto"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-    <fullyQualifiedTypeName name="com.mycom.myapp.board.service.BoardService"/>
     <fullyQualifiedTypeName name="com.mycom.myapp.board.dao.BoardDao"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.board.service.BoardService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.board.dto.BoardDto"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.user.dto.UserDto"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.board.dto.BoardResultDto"/>
+    <fullyQualifiedTypeName name="com.mycom.myapp.board.dto.BoardParamDto"/>
 </qualifiedTypeNameHistroy>

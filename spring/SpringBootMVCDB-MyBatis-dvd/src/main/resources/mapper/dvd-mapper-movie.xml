@@ -18,8 +18,8 @@
   </select>
   
   <insert id="insertMovie" parameterType="com.mycom.myapp.dto.MovieDto" >
-  	insert into movies	(	movie_id, 	 movie_title, 	director, 	price  )
-				values 	(#{movie_id}, #{movie_title}, #{director}, #{price});
+  	insert into movies	(	movie_title, 	director, 	price  )
+				values 	(#{movie_title}, #{director}, #{price});
   </insert>
   
   <update id="updateMovie" parameterType="com.mycom.myapp.dto.MovieDto" >
