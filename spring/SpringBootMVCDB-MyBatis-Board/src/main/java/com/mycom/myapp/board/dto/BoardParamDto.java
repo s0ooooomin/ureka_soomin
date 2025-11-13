@@ -7,7 +7,7 @@ public class BoardParamDto {
 	private String searchWord; 	// 제목 검색
 	
 	// 상세
-	private int boardId; // key값
+	private int boardId; // 게시글 key값
 	private int userSeq; // 작성자-조회자 일치 확인
 	
 	

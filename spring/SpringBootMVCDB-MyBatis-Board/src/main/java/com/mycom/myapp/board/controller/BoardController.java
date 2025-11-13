@@ -41,6 +41,13 @@ public class BoardController {
 	}
 
 	// 상세
+	// 조회수 처리
+	// #1. 무조건 증가
+	// 		내가 내 글 여러번 & 남이 내 글 여러번 모두 계속 증가
+	//		- 데이터의 왜곡 발생 (한사람이 조회수 조작O)
+	// #2. 한 사용자는 한 게시글에 대해 조회수 1회만 증가
+	//		- 데이터의 왜곡은 없지만 복잡
+	// 		- db 테이블에 사용자-게시글 조회 여부 기록 (visit같은거)
 	@GetMapping("/detail/{boardId}")
 	public BoardResultDto detailBoard(@PathVariable("boardId") Integer boardId, HttpSession session) {
 		BoardParamDto boardParamDto = new BoardParamDto();

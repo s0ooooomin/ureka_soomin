@@ -28,7 +28,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
 				, "/index.html"
 				, "/assets/**"
 				, "/pages/login", "/pages/register.html"
-				, "/auth/**"
+				, "/auth/login"
+				, "/error" // 예외발생시 forwarding 하는 url
 			);
 			
 		

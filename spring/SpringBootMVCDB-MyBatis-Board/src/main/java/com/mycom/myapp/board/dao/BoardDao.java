@@ -19,7 +19,14 @@ public interface BoardDao {
 	
 	// 상세
 	BoardDto detailBoard(BoardParamDto boardParamDto);
-	// 등록
+	
+	// 조회수
+	int countBoardUserRead(BoardParamDto boardParamDto); // boardId, userSeq 사용 -> 현재 사용자 (userSeq)가 현재 게시글(boardId)을 이전에 읽었는지 판단
+	int insertBoardUserRead(BoardParamDto boardParamDto);	// 현재 사용자가 읽었음을 기록
+	int updateBoardUserRead(int boardId);					// 게시물 조회수 증가 (read_count)
+	
+	
+	// 등록, 수정, 삭제
 	int insertBoard(BoardDto boardDto);
 	int updateBoard(BoardDto boardDto);
 	int deleteBoard(int boardId);

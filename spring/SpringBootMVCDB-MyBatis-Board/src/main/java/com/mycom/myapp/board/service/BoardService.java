@@ -17,6 +17,11 @@ public interface BoardService {
 	
 	// 상세
 	BoardResultDto detailBoard(BoardParamDto boardParamDto);
+	
+	// 조회수 처리는 이 인터페이스에 X
+	// controller는 그냥 조회 요청 (business logic)
+	// 조회 (B.L) 을 처리하는 boardServiceImpl 에서 상세 업무의 부분으로서 조회수 처리 포함되도록 구현
+	
 	// 등록, 수정, 삭제
 	BoardResultDto insertBoard(BoardDto boardDto);
 	BoardResultDto updateBoard(BoardDto boardDto);
