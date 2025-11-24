@@ -1,5 +1,0 @@
-package com.mycom.myapp.annotation;
-@AboutMe(love="sports", hate="study")
-public class Myclass {
-	
-}

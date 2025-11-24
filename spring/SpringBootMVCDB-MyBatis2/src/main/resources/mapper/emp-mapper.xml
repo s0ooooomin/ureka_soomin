@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- EmpDao의 구현 -->  
+<mapper namespace="com.mycom.myapp.dao.EmpDao">
+
+	
+  <select id="listEmp" resultType="com.mycom.myapp.dto.EmpDto">
+	select employeeId, first_name, last_name, email, hire_date from emp;
+  </select>
+  
+  <select id="detailEmp" parameterType="int" resultType="com.mycom.myapp.dto.EmpDto">
+	select 	employeeId, first_name, last_name, email, hire_date
+	from	emp
+	where	employeeId = #{employeeId};
+  </select>
+  
+  <insert id="insertEmp" parameterType="com.mycom.myapp.dto.EmpDto" >
+  	insert into emp		( 	employeeId,	 first_name, 	last_name, 	  email, hire_date	)
+				values 	(#{employeeId}, #{firstName}, #{lastName}, #{email}, #{hireDate} );
+  </insert>
+  
+  <update id="updateEmp" parameterType="com.mycom.myapp.dto.EmpDto" >
+  	update 	emp
+  	set		first_name 	= #{firstName}
+  			, last_name = #{lastName}
+  			, email 	= #{email}
+  			, hire_date = #{hireDate}
+  	where	employeeId 	= #{employeeId};
+  </update>
+  
+  <delete id="deleteEmp" parameterType="int" >
+  	delete
+  	from	emp
+  	where	employeeId = #{employeeId};
+  </delete>
+  
+</mapper>

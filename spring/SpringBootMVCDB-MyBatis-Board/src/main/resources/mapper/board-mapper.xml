@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- BoardDao의 구현 -->  
+<mapper namespace="com.mycom.myapp.board.dao.BoardDao">
+
+<!-- 목록 -->
+	<select id="listBoard" parameterType="com.mycom.myapp.board.dto.BoardParamDto" resultType="com.mycom.myapp.board.dto.BoardDto">
+		SELECT	b.board_id, b.user_seq, u.user_name, u.user_profile_image, b.title, b.content, b.reg_dt, b.read_count
+		FROM	board b, users u
+		WHERE	b.user_seq = u.user_seq
+		ORDER BY	b.board_id desc
+		LIMIT	#{limit}
+		OFFSET	#{offset};
+	</select>
+	<select id="listBoardTotalCount">
+		SELECT	COUNT(*)
+		FROM	board;
+	</select>
+	
+	<select id="listBoardSearchWord" parameterType="com.mycom.myapp.board.dto.BoardParamDto" resultType="com.mycom.myapp.board.dto.BoardDto">
+		SELECT	b.board_id, b.user_seq, u.user_name, u.user_profile_image, b.title, b.content, b.reg_dt, b.read_count
+		FROM	board b, users u
+		WHERE	b.user_seq = u.user_seq
+		AND		b.title LIKE CONCAT ('%', #{searchWord}, '%')
+		ORDER BY	b.board_id desc
+		LIMIT	#{limit}
+		OFFSET	#{offset};
+	</select>
+	<select id="listBoardSearchWordTotalCount" parameterType="com.mycom.myapp.board.dto.BoardParamDto">
+		SELECT	COUNT(*)
+		FROM	board
+		WHERE	title LIKE CONCAT ('%', #{searchWord}, '%');
+	</select>
+
+<!-- 상세 -->
+	<select id="detailBoard" parameterType="com.mycom.myapp.board.dto.BoardParamDto" resultType="com.mycom.myapp.board.dto.BoardDto">
+		SELECT	b.board_id, b.user_seq, u.user_name, u.user_profile_image, b.title, b.content, b.reg_dt, b.read_count
+		FROM	board b, users u
+		WHERE	b.user_seq = u.user_seq
+		AND		b.board_id = #{boardId};
+	</select>
+	
+	<!-- 조회수 -->
+	<select id="countBoardUserRead" parameterType="com.mycom.myapp.board.dto.BoardParamDto">
+		SELECT	count(*)
+		FROM	board_user_read
+		WHERE	board_id = #{boardId}
+		and		user_seq = #{userSeq}
+	</select>
+	
+	<insert id="insertBoardUserRead" parameterType="com.mycom.myapp.board.dto.BoardParamDto">
+		INSERT INTO board_user_read ( board_id,   user_seq)
+							VALUES	(#{boardId}, #{userSeq});
+	</insert>
+	
+	<update id="updateBoardUserRead" parameterType="int" >
+		UPDATE	board
+		SET		read_count = read_count + 1
+		WHERE 	board_id = #{boardId};
+	</update>
+	
+	
+	<!-- 등록 수정 삭제 -->
+	<insert id="insertBoard" parameterType="com.mycom.myapp.board.dto.BoardDto">
+		INSERT INTO board 	( user_seq, 	title, 	content	)
+					VALUES 	(#{userSeq}, #{title}, #{content} )
+	</insert>
+	
+	<update id="updateBoard" parameterType="com.mycom.myapp.board.dto.BoardDto">
+		UPDATE	board
+		SET		title 	= #{title},
+				content = #{content}
+		WHERE 	board_id = #{boardId};
+	</update>
+	
+	<delete id="deleteBoard" parameterType="int" >
+		DELETE 	FROM board
+		WHERE 	board_id = #{boardId};
+	</delete>
+  
+</mapper>

@@ -1,7 +1,0 @@
-package com.mycom.myapp.calc.has_a;
-
-public class HasaCalculator {
-
-	Calculator calculator;
-	
-}
