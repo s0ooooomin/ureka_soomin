@@ -9,12 +9,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin("*") // 다른 애들이 origin으로 연결되는거 허용 -> 127.0.0.1:5500(vscode의 fkdlqm tjqj)
+//@CrossOrigin("*") // (credentials가 없는) 다른 애들이 origin으로 연결되는거 허용 -> 127.0.0.1:5500(vscode의 fkdlqm tjqj)
+@CrossOrigin(
+	origins = "http://127.0.0.1:5500",
+	allowCredentials="true",
+	allowedHeaders="*",
+	methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE, RequestMethod.OPTIONS} 
+)
 public class CORSController {
 	@GetMapping("/cors")
 	public Map<String, String> getCORS(@RequestParam("param") String param) {
