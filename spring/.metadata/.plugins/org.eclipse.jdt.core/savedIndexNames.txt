@@ -89,7 +89,6 @@ INDEX VERSION 1.134+C:\dev\ureka\spring\.metadata\.plugins\org.eclipse.jdt.core
 3682174810.index
 3006416144.index
 3586393572.index
-3800645094.index
 2580208405.index
 1722855633.index
 2348797304.index

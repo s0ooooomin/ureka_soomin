@@ -8220,3 +8220,435 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2025-11-12 15:37:28,508 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-11-12 15:37:28,509 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-11-12 15:37:28,510 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-12 18:24:41,327 [Worker-147: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-12 18:24:41,382 [Worker-147: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-12 18:24:41,384 [Worker-147: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-dvd\src\test\resources
+2025-11-13 09:04:24,503 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-11-13 09:17:40,108 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:17:40,129 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:17:40,134 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:18:10,605 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:18:10,611 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:18:10,613 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:18:34,191 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:18:34,205 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:18:34,207 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:20:02,447 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:20:02,458 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:20:02,461 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:20:09,033 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:20:09,036 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:20:09,037 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:22:03,172 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:22:03,175 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:22:03,177 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:23:10,328 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:23:10,331 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:23:10,332 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:25:52,554 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 09:25:52,555 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:25:52,558 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:28:56,052 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:28:56,059 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:28:56,060 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:29:00,592 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 09:29:00,592 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:29:00,595 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:30:52,582 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 09:30:52,584 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:30:52,586 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:34:59,476 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:34:59,481 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:34:59,483 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:35:31,429 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:35:31,435 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:35:31,437 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:36:32,154 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:36:32,157 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:36:32,159 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:38:54,889 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:38:54,892 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:38:54,895 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:39:26,435 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:39:26,438 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:39:26,440 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:40:20,889 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:40:20,894 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:40:20,895 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:41:48,116 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:41:48,120 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:41:48,122 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 09:41:52,013 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 09:41:52,018 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 09:41:52,020 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 10:40:48,210 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 10:40:48,215 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 10:40:48,217 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 10:47:01,586 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 10:47:01,591 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 10:47:01,593 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 10:47:06,395 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 10:47:06,400 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 10:47:06,402 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:01:54,317 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:01:54,318 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:01:54,319 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:02:32,640 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:02:32,641 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:02:32,642 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:08:53,779 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:08:53,779 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:08:53,780 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:10:33,648 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:10:33,649 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:10:33,650 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:10:59,261 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:10:59,262 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:10:59,263 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:11:27,045 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:11:27,046 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:11:27,047 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:12:26,744 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:12:26,745 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:12:26,746 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:13:07,360 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:13:07,360 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:13:07,361 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:14:50,204 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:14:50,209 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:14:50,210 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:15:17,259 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:15:17,260 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:15:17,261 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:15:56,253 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:15:56,253 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:15:56,255 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:16:12,194 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:16:12,194 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:16:12,195 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:19:15,115 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:19:15,119 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:19:15,121 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:19:32,454 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:19:32,459 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:19:32,460 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:20:28,299 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:20:28,302 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:20:28,304 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:21:08,151 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:21:08,154 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:21:08,155 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:23:18,585 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:23:18,589 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:23:18,590 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:25:25,174 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:25:25,174 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:25:25,176 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:25:31,541 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:25:31,542 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:25:31,543 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:26:03,171 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:26:03,171 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:26:03,172 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:26:33,443 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:26:33,444 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:26:33,445 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:31:08,941 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:31:08,947 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:31:08,948 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:33:01,902 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:33:01,906 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:33:01,907 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:35:49,478 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:35:49,479 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:35:49,480 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:36:02,515 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:36:02,516 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:36:02,517 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:36:22,277 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:36:22,278 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 11:36:22,278 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:39:56,305 [Worker-62: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:39:56,311 [Worker-62: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:39:56,313 [Worker-62: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:41:51,123 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:41:51,128 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:41:51,130 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:42:01,372 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:42:01,378 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:42:01,379 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:42:29,027 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:42:29,032 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:42:29,034 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:42:37,054 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:42:37,057 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:42:37,058 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:45:32,833 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:45:32,836 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:45:32,837 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:45:46,756 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:45:46,760 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:45:46,761 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:47:01,176 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:47:01,181 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:47:01,183 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:47:19,521 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:47:19,528 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:47:19,531 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 11:47:27,161 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 11:47:27,165 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 11:47:27,166 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:10:27,444 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:10:27,449 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:10:27,451 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:12:10,137 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:12:10,143 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:12:10,144 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:12:38,365 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:12:38,371 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:12:38,374 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:16:05,642 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:16:05,647 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:16:05,649 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:16:48,398 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:16:48,403 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:16:48,405 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:22:57,513 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:22:57,517 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:22:57,520 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:27:30,145 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:27:30,150 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:27:30,152 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:28:05,075 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:28:05,079 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:28:05,081 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:32:35,150 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:32:35,155 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:32:35,156 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:44:44,104 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:44:44,109 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:44:44,110 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:45:24,216 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:45:24,222 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:45:24,224 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:45:37,825 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:45:37,840 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:45:37,842 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:45:48,707 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:45:48,710 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:45:48,711 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:46:19,362 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:46:19,368 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:46:19,370 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:46:36,932 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:46:36,935 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:46:36,937 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:46:57,143 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:46:57,149 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:46:57,151 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:47:04,678 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:47:04,680 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:47:04,682 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:47:26,523 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:47:26,528 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:47:26,530 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:47:46,447 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:47:46,451 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:47:46,452 [Worker-84: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 13:48:21,981 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 13:48:21,986 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 13:48:21,988 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:12:27,503 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:12:27,513 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:12:27,515 [Worker-98: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:14:19,747 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:14:19,750 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:14:19,751 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:17:06,700 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:17:06,705 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:17:06,706 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:17:51,745 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:17:51,750 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:17:51,752 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:21:49,342 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:21:49,347 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:21:49,348 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:28:56,790 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:28:56,795 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:28:56,797 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:31:34,088 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:31:34,092 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:31:34,094 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:32:15,139 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:32:15,144 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:32:15,146 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:32:40,835 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:32:40,838 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:32:40,839 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:35:40,538 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:35:40,541 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:35:40,542 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:37:02,807 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:37:02,810 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:37:02,811 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:38:35,745 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:38:35,750 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:38:35,752 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:39:01,107 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:39:01,112 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:39:01,113 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:40:12,935 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:40:12,937 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:40:12,938 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:40:20,962 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:40:20,965 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:40:20,966 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:40:28,374 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:40:28,377 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:40:28,379 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:44:44,374 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:44:44,380 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:44:44,381 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 14:44:54,803 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 14:44:54,806 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 14:44:54,807 [Worker-118: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 15:03:31,561 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 15:03:31,565 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 15:03:31,567 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board\src\test\resources
+2025-11-13 15:30:38,538 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 15:30:38,553 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 15:30:38,560 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 15:47:38,948 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 15:47:38,953 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 15:47:38,954 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 15:48:11,776 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 15:48:11,777 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 15:48:11,779 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 15:49:13,950 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 15:49:13,958 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 15:49:13,960 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 15:49:35,805 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 15:49:35,810 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 15:49:35,812 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 15:49:55,636 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 15:49:55,646 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 15:49:55,648 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:06:59,914 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 17:06:59,920 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 17:06:59,922 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:08:25,876 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 17:08:25,879 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 17:08:25,881 [Worker-130: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:08:59,085 [Worker-140: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 17:08:59,087 [Worker-140: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 17:08:59,088 [Worker-140: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:15:23,969 [Worker-142: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:15:23,970 [Worker-142: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:15:23,971 [Worker-142: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:15:47,579 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:15:47,579 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:15:47,580 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:16:52,386 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:16:52,386 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:16:52,387 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:17:37,959 [Worker-143: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:17:37,959 [Worker-143: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:17:37,960 [Worker-143: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:19:29,859 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:19:29,860 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:19:29,862 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:19:37,388 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:19:37,389 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:19:37,390 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:21:22,862 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:21:22,863 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:21:22,864 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:27:02,436 [Worker-151: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:27:02,436 [Worker-151: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:27:02,437 [Worker-151: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:29:13,811 [Worker-151: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:29:13,811 [Worker-151: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:29:13,813 [Worker-151: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:30:38,747 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:30:38,749 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:30:38,750 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:31:44,250 [Worker-154: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:31:44,251 [Worker-154: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:31:44,252 [Worker-154: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:31:58,466 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:31:58,466 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:31:58,467 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:32:25,380 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-11-13 17:32:31,618 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [354])
+2025-11-13 17:32:31,619 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2025-11-13 17:32:31,619 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2025-11-13 17:32:31,619 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2025-11-13 17:32:31,620 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2025-11-13 17:32:31,621 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2025-11-13 17:32:31,622 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2025-11-13 17:32:31,622 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2025-11-13 17:32:31,623 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [27])
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\com.google.guava_33.0.0.jre.jar
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.12 [584])
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\slf4j.api_2.0.12.jar
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [44])
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [40])
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\jakarta.annotation-api_1.3.5.jar
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [75])
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.apache.commons.cli_1.6.0.jar
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [77])
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.14.0 [81])
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\org.apache.commons.lang3_3.14.0.jar
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [29])
+2025-11-13 17:32:31,624 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\dev\springToolSuite\sts-4.22.1.RELEASE\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-11-13 17:32:31,626 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev":
+2025-11-13 17:32:31,627 [Worker-9: Launching Executing verify in C__dev_ureka_spring_SpringBootMVCDB-MyBatis-Board-dev] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -Ppom.xml -B -Dstyle.color=always verify
+2025-11-13 17:33:32,457 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 17:33:32,469 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 17:33:32,473 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:33:48,671 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:33:48,672 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:33:48,673 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:34:57,288 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:34:57,289 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-11-13 17:34:57,291 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-Board-dev\src\test\resources
+2025-11-13 17:44:53,312 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-11-13 17:44:53,326 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources from src\main\resources to target\classes
+2025-11-13 17:44:53,332 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\dev\ureka\spring\SpringBootMVCDB-MyBatis-dvd\src\test\resources
