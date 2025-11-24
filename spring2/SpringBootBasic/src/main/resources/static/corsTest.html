@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>corsTest.html입니다.</h1>
+	<hr>
+	<button id="btnGetRequest">Get 요청</button>
+	<button id="btnPostRequest">Post</button>
+	<button id="btnPutRequest">Put</button>
+	<button id="btnDeleteRequest">Delete</button>
+
+
+<script>
+	window.onload = function() {
+		// 클릭이벤트 처리
+		document.querySelector("#btnGetRequest").onclick = makeGetRequest;
+		document.querySelector("#btnPostRequest").onclick = makePostRequest;
+		document.querySelector("#btnPutRequest").onclick = makePutRequest;
+		document.querySelector("#btnDeleteRequest").onclick = makeDeleteRequest;
+		
+	}
+	async function makeGetRequest() {
+		let response = await fetch("http://localhost:8080/cors?param=1");	
+		let data = response.json(); // json화
+		console.log(data);
+	}
+	async function makePostRequest() {
+		let urlParams = new URLSearchParams({
+			param: 2,
+		})
+		let fetchOptions = {
+			method: "post",
+			body: urlParams,
+		}
+		
+		let response = await fetch("http://localhost:8080/cors", fetchOptions); // query로 날아가는 게 아니니까 ?<-이거 필요X	
+		let data = response.json(); // json화
+		console.log(data);
+	}
+	async function makePutRequest() {
+		let urlParams = new URLSearchParams({
+			param: 3,
+		})
+		let fetchOptions = {
+			method: "put",
+			body: urlParams,
+		}
+		
+		let response = await fetch("http://localhost:8080/cors/123", fetchOptions); // query로 날아가는 게 아니니까 ?<-이거 필요X	
+		let data = response.json(); // json화
+		console.log(data);
+	}
+	async function makeDeleteRequest() {
+		let fetchOptions = {
+			method: "delete",
+		}
+		
+		let response = await fetch("http://localhost:8080/cors/123", fetchOptions); // query로 날아가는 게 아니니까 ?<-이거 필요X	
+		let data = response.json(); // json화
+		console.log(data);
+	}
+	
+	
+	
+	
+	
+	
+
+</script>
+
+
+
+</body>
+</html>

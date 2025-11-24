@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>jsonController.html입니다.</h1>
+	<hr>
+	<button id="btnSendEmp">Emp 보내기</button>
+	<button id="btnSendEmpList">EmpList 보내기</button>
+	
+	<script>
+		let emp = {
+				employeeId: 1,
+				firstName: '길동',
+				lastName: '홍',
+				email: 'hong@gildong.com',
+				hireDate: '2025-11-24'
+		}
+		
+		let empList = [
+			{
+				employeeId: 1,
+				firstName: '길동',
+				lastName: '홍',
+				email: 'hong@gildong.com',
+				hireDate: '2025-11-24'
+			},
+			{
+				employeeId: 2,
+				firstName: '길동',
+				lastName: '이',
+				email: 'hong2@gildong2.com',
+				hireDate: '2025-11-23'
+			},
+			{
+				employeeId: 3,
+				firstName: '길동',
+				lastName: '삼',
+				email: 'hong3@gildong3.com',
+				hireDate: '2025-11-22'
+			},
+		]
+	
+		window.onload = function() {
+			document.querySelector("#btnSendEmp").onclick = async function() {
+								
+				let fetchOptions = {
+						method: "post",
+						headers: {
+							'Content-Type':'application/json' // json이라는 걸 header 알려줘야함
+						},
+						body: JSON.stringify(emp) // json 문자열로 바꿔주는 메소드
+				}
+				
+				let response = await fetch("/emp", fetchOptions);
+				let data = await response.json();
+				console.log(data);
+				/* 
+				if (data.result == "success") {
+					window.location.href = "/main.html";
+				}else {
+					alert("로그인 실패!!!")
+				} */
+			}
+
+			document.querySelector("#btnSendEmpList").onclick = async function() {
+								
+				let fetchOptions = {
+						method: "post",
+						headers: {
+							'Content-Type':'application/json' // json이라는 걸 header 알려줘야함
+						},
+						body: JSON.stringify(empList) // json 문자열로 바꿔주는 메소드
+				}
+				
+				let response = await fetch("/emplist", fetchOptions);
+				let data = await response.json();
+				console.log(data);
+
+			}
+		}
+	</script>
+
+</body>
+</html>
