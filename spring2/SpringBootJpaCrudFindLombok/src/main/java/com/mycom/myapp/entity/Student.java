@@ -1,0 +1,22 @@
+package com.mycom.myapp.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Data;
+import lombok.Setter;
+
+@Data // getter setter tostring constructor equals&hash
+@Entity
+//@Setter // @Data로 다 만들어짐
+public class Student {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String name;
+	private String email;
+	private String phone;
+	
+}
