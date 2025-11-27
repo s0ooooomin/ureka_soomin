@@ -37,7 +37,7 @@
 		WHERE 	board_id = #{boardId};
 	</delete>
 	
-	<select id="listBoardSearch" parameterType="string" resultType="com.mycom.myapp.board.dto.BoardDto">
+	<select id="listBoardSearch" parameterType="com.mycom.myapp.board.dto.BoardParamDto" resultType="com.mycom.myapp.board.dto.BoardDto">
 		<!-- 검색 -->
 		SELECT	b.board_id, b.user_seq, u.user_name, u.user_profile_image, b.title, b.content, b.reg_dt, b.read_count
 		FROM	board b, users u

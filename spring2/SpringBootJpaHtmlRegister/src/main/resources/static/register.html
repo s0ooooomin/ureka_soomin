@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>register.html입니다.</h1>
+	<hr>
+	<div>
+		name : <input type="text" name="name" id="name">
+	</div>	
+	<div>
+		email : <input type="text" name="email" id="email">
+	</div>	
+	<div>
+		password : <input type="password" name="password" id="password">
+	</div>
+	<button id="btnRegister">가입하기</button>
+	
+	
+<script>
+	window.onload = function() {
+		document.querySelector("#btnRegister").onclick = register;
+	}
+
+	async function register() {
+		let name = document.querySelector("#name").value;
+		let email = document.querySelector("#email").value;
+		let password = document.querySelector("#password").value;
+		
+		let urlParams = new URLSearchParams({
+			name, email, password
+		});
+		
+		let url = "/users/register";
+		let fetchOptions = {
+				method: "post",
+				body: urlParams,
+		}
+		
+		let response = await fetch(url, fetchOptions);
+		let data = await response.json(); // response에 담긴 json을 js Object로 변환?
+		console.log(data);
+		
+		if (data.result == "success") {
+			alert("가입되었습니다");
+			
+			window.location.href="/login.html";
+		}else {
+			alert("회원가입 실패\n다시 확인해주세요");
+		}
+		
+	}
+
+</script>
+
+
+</body>
+</html>

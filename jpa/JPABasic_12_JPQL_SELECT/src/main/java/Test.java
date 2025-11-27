@@ -45,10 +45,10 @@ public class Test {
 //		productList.forEach(product -> System.out.println(product) );
 		
 		// #3. 개별 필드 ( id, name, price )
-//		String jpql = "select p.id, p.name, p.price from Product p"; // jpql 문자열
-//		em.createQuery(jpql, Object[].class)
-//			.getResultList()
-//			.forEach(objArray -> System.out.println(objArray[0] + ", " + objArray[1] + ", " + objArray[2]) ); // 중간에 연결되는 부분 삭제
+		String jpql = "select p.id, p.name, p.price from Product p"; // jpql 문자열
+		em.createQuery(jpql, Object[].class)
+			.getResultList()
+			.forEach(objArray -> System.out.println(objArray[0] + ", " + objArray[1] + ", " + objArray[2]) ); // 중간에 연결되는 부분 삭제
 		
 //		// #4. 전체 필드 + where (price > 2000)
 //		String jpql = ""
@@ -157,15 +157,15 @@ public class Test {
 
 		// #12-2. 내장function (DBMS마다 다 다름) mysql concat(), ifnull(),...
 		// select concat(name, "-", price) name_price from Product p from product
-		String jpql = """
-				select p.name, p.price, ifnull(p.country, 'unknown') country
-				from Product p
-				"""; // jpql 문자열 (뒤는 넘겨받은 변수. 기존에 ? 이런 식으로 썼던거)
-		em.createQuery(jpql, Object[].class) // 한 줄 (ex.count -> 8)이 아니기 때문에 single 불가
-			.getResultList()
-			.forEach( objArray -> {
-				System.out.println(objArray[0] + ", " + objArray[1] + "," + objArray[2]);
-			});
+//		String jpql = """
+//				select p.name, p.price, ifnull(p.country, 'unknown') country
+//				from Product p
+//				"""; // jpql 문자열 (뒤는 넘겨받은 변수. 기존에 ? 이런 식으로 썼던거)
+//		em.createQuery(jpql, Object[].class) // 한 줄 (ex.count -> 8)이 아니기 때문에 single 불가
+//			.getResultList()
+//			.forEach( objArray -> {
+//				System.out.println(objArray[0] + ", " + objArray[1] + "," + objArray[2]);
+//			});
 
 		
 		

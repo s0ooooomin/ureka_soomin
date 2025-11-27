@@ -34,10 +34,10 @@ public class Test2 {
 		
 		// ------------ JPQL ------------ //
 //		// #2. TypedQuery
-//		String jpql = "select c from Customer c";
-//		TypedQuery<Customer> query  = em.createQuery(jpql, Customer.class);
-//		List<Customer> customerList = query.getResultList();
-//		customerList.forEach(customer -> System.out.println(customer));
+		String jpql = "select c from Customer c";
+		TypedQuery<Customer> query  = em.createQuery(jpql, Customer.class);
+		List<Customer> customerList = query.getResultList();
+		customerList.forEach(customer -> System.out.println(customer));
 		
 //		// #3. 개별 필드
 //		String jpql = "select c.cust_id, c.cust_name, c.cust_phone from Customer c";
@@ -67,13 +67,13 @@ public class Test2 {
 //		System.out.println(cnt);
 			
 		// #6. avg (order_count)
-		String jpql = ""
-				+ "select 	avg(c.order_count) "
-				+ "from 	Customer c "
-				+ "";
-		Double avg = em.createQuery(jpql, Double.class)
-						.getSingleResult();
-		System.out.println(avg);
+//		String jpql = ""
+//				+ "select 	avg(c.order_count) "
+//				+ "from 	Customer c "
+//				+ "";
+//		Double avg = em.createQuery(jpql, Double.class)
+//						.getSingleResult();
+//		System.out.println(avg);
 		
 		// #7. sum() + min() + max()
 		

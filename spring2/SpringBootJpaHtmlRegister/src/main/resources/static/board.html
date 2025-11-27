@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+#navbar{
+display: none;
+}</style>
+</head>
+<body>
+	<h1>board.html입니다.</h1>
+	<hr>
+	
+	<div id="navbar">
+		<a href="/login.html" id="linkLogin">로그인</a>
+		<span id="userNameWrapper"> <span id="userName"></span> 님 안녕하세요. | </span>
+		<a href="#" id="linkLogout">로그아웃</a> 
+		<a href="/board.html"> | Board</a>
+		<a href="/register.html" id="linkRegister"> | Register</a> |
+	</div>
+	
+<script src="/assets/js/common.js"></script>
+<script>
+	window.onload = function() {
+		initUI();
+		
+		// Logout
+		document.querySelector("#linkLogout").onclick = logout; // common.js의 function logout()
+		
+	}
+	
+</script>
+	
+</body>
+</html>

@@ -17,6 +17,7 @@ public interface BoardService {
 	BoardResultDto updateBoard(BoardDto boardDto);
 	BoardResultDto deleteBoard(int boardId);
 	
-	BoardResultDto listBoardSearch(String searchWord);
+	BoardResultDto listBoardSearch (BoardParamDto boardParamDto);
+
 	
 }

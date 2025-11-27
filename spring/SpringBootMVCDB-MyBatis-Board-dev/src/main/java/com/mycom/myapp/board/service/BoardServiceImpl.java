@@ -112,10 +112,10 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public BoardResultDto listBoardSearch(String searchWord) {
+	public BoardResultDto listBoardSearch(BoardParamDto boardParamDto) {
 		BoardResultDto boardResultDto = new BoardResultDto();
 		try {
-			List<BoardDto> list = boardDao.listBoardSearch(searchWord);
+			List<BoardDto> list = boardDao.listBoardSearch(boardParamDto);
 			boardResultDto.setList(list);
 			boardResultDto.setResult("success");
 		}catch(Exception e) {
@@ -125,6 +125,8 @@ public class BoardServiceImpl implements BoardService {
 		
 		return boardResultDto;
 	}
+
+
 
 
 

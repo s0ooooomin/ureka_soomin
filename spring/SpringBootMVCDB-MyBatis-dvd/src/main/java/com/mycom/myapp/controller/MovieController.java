@@ -82,7 +82,7 @@ public class MovieController {
 	}
 	
 	// 검색
-	@GetMapping("/listMovieLike") 
+	@GetMapping("/listMovieSearch") 
 	public List<MovieDto> listMovieLike(@RequestParam String searchWord) { // requestParam : 반드시 parameter가 request에 담겨져 와야함
 		return movieService.listMovieLike(searchWord);
 	}

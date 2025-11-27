@@ -2,6 +2,7 @@ package com.mycom.myapp.board.controller;
 
 import java.util.List;
 
+import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,8 +31,16 @@ public class BoardController {
 	
 	// 목록
 	@GetMapping("/list")
-	public BoardResultDto listBoard() {
-		return boardService.listBoard();
+	public BoardResultDto listBoard(BoardParamDto boardParamDto) {
+		BoardResultDto boardResultDto = null;
+		
+		if (Strings.isEmpty( boardParamDto.getSearchWord() ) ) {
+			boardResultDto = boardService.listBoard();
+		}else {
+			boardResultDto = boardService.listBoardSearch(boardParamDto);
+		}
+		
+		return boardResultDto;
 	}
 
 	// 상세
@@ -65,12 +74,6 @@ public class BoardController {
 	@GetMapping("/delete/{boardId}")
 	public BoardResultDto deleteBoard(@PathVariable("boardId") Integer boardId) {
 		return boardService.deleteBoard(boardId);
-	}
-	
-	// 검색
-	@GetMapping("/listBoardSearch")
-	public BoardResultDto listBoardSearch(@RequestParam String searchWord) {
-		return boardService.listBoardSearch(searchWord);
 	}
 
 

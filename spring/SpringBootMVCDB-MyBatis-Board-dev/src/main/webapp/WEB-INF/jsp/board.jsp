@@ -49,8 +49,8 @@
 	
 	<!-- 검색창 -->
 	<div class="input-group mt-3">
-	  <input type="text" class="form-control" id="searchWord" placeholder="검색어를 입력하세요.">
-	  <button class="btn btn-outline-secondary" type="button" id="btnsearch">검색</button>
+	  <input type="text" class="form-control" id="inputSearchWord" placeholder="검색어를 입력하세요.">
+	  <button class="btn btn-outline-secondary" type="button" id="btnSearch">검색</button>
 	</div>
 	
 	
@@ -186,9 +186,15 @@
 
 <script src="/assets/js/util.js"></script>
 <script>
+
+	// 전역변수
+	// 모달 관련 변수
 	const insertModal = new bootstrap.Modal( document.querySelector("#insertBoardModal"));
 	const detailModal = new bootstrap.Modal( document.querySelector("#detailBoardModal"));
 	const updateModal = new bootstrap.Modal( document.querySelector("#updateBoardModal"));
+	
+	// 검색어
+	let SEARCH_WORD = '';
 	
 	// 창이 띄워져 있는 동안 발생할 수 있는 일
 	window.onload = function() {
@@ -245,16 +251,28 @@
 			deleteBoard();
 		}
 
-		// 글 검색
-		document.querySelector("#btnsearch").onclick = function() {
-			listBoardSearch();
+		// 검색어 목록
+		document.querySelector("#btnSearch").onclick = function() {
+			// #1. 검색 버튼이 검색어 전용일 경우
+			let searchWord = document.querySelector("#inputSearchWord").value;
+			if (searchWord == '') {
+				alert("검색어를 입력하세요.");
+
+				SEARCH_WORD = searchWord;
+				listBoard();
+			} else {
+				// #2. 검색어 X -> 전체목록, 검색어 O -> 검색목록
+				SEARCH_WORD = document.querySelector("#inputSearchWord").value;
+				listBoard();
+			}
 		}
 		
 	}
 	
 	async function listBoard() {
 		let url = "/boards/list";
-		let response = await fetch(url);
+		let urlParams = "?searchWord=" + SEARCH_WORD;
+		let response = await fetch(url + urlParams);
 		let data = await response.json();
 
 		console.log(data);

@@ -46,11 +46,6 @@ public class MovieServiceImpl implements MovieService {
 //	public int borrowMovie(String cust_name, String cust_phone, int movie_id) {
 //		return movieDao.borrowMovieByParams(cust_name, cust_phone, movie_id);
 //	}
-
-	@Override
-	public List<MovieDto> listMovieLike(String searchWord) {
-		return movieDao.listMovieLike(searchWord);
-	}
 	
 
 }

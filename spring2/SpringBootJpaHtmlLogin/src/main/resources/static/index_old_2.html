@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>index.html입니다.</h1>
+	<hr>
+	
+	<!-- 로그인 여부에 따라 달라지는 UI, 모든 페이지 공통 -->
+	<!-- 로그인 X -->
+	<a href="/login.html" id="linkLogin">로그인</a>
+	
+	<!-- 로그인 O -->
+	<span id="userNameWrapper"> <span id="userName"></span> 님 안녕하세요. | </span>
+	<a href="#" id="linkLogout">로그아웃</a> 
+	
+	<!-- 로그인 상관없이 -->
+	<a href="/board.html"> | Board</a> |
+	
+	
+<script>
+	window.onload = function() {
+		initUI();
+		
+		// Logout
+		document.querySelector("#linkLogout").onclick = logout;
+		
+	}
+	
+	function initUI() {
+		// 로그인 여부 판단은 sessionStorage에 "name" 속성이 있는지 판단
+		let name = sessionStorage.getItem("name");
+		
+		if (name != null) { // login O
+			document.querySelector("#userName").innerHTML = name;
+			document.querySelector("#userNameWrapper").style.display = "inline";
+			document.querySelector("#linkLogout").style.display = "inline";
+			document.querySelector("#linkLogin").style.display = "none";
+		}else { // login X
+			document.querySelector("#userName").innerHTML = "";
+			document.querySelector("#userNameWrapper").style.display = "none";
+			document.querySelector("#linkLogout").style.display = "none";
+			document.querySelector("#linkLogin").style.display = "inline";
+		}
+	}
+	
+	
+	async function logout() {
+		let url = "/auth/logout";
+		
+		let response = await fetch(url);
+		let data = await response.json();
+		
+		console.log(data);
+		
+		if (data.result == "success") {
+			// 개별 항목 삭제
+			sessionStorage.removeItem("name"); 
+			sessionStorage.removeItem("email");
+			sessionStorage.removeItem("roles");
+			
+			// 전체 삭제
+			sessionStorage.clear();
+			
+			alert("로그아웃 되었습니다.");
+			
+			initUI();
+			
+		}else{
+			alert("로그아웃 실패");
+		}
+	}
+	
+</script>
+
+
+	
+</body>
+</html>

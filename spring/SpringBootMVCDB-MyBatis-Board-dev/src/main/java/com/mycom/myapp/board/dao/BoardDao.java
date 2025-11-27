@@ -19,5 +19,7 @@ public interface BoardDao {
 	int updateBoard(BoardDto boardDto);
 	int deleteBoard(int boardId);
 	
-	List<BoardDto> listBoardSearch (String searchWord);
+	// 검색
+	List<BoardDto> listBoardSearch (BoardParamDto boardParamDto);
+	
 }

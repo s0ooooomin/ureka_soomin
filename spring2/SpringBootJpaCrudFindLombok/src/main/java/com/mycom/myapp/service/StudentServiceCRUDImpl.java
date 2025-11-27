@@ -31,6 +31,16 @@ public class StudentServiceCRUDImpl implements StudentServiceCrud{
 		return studentRepoitory.findById(id);
 	}
 
+	// save()
+	//  전달되는 엔티티 객체에 id 가 있으면 ( select 한 결과가 존재 ) select - update (merge)
+	//  전달되는 엔티티 객체에 id 가 있으면 ( select 한 결과가 존재 X ) 오류 : Row was updated or deleted by another transaction
+	//  전달되는 엔티티가 @GeneratedValue 를 사용하고 id 가 있으면 select - update 를 수행하려고 한다.
+	//  이 때, select 결과가 없는 경우, 이전 버전에서는 insert 를 진행했으나, 
+	//  현재 6.6.X 버전에서는 예외를 발생시킨다. 보다 엄격한 룰 적용. 
+	//  id 를 포함한 엔티티를 insert 하려면 @GeneratedValue 를 제거하고 사용한다.
+	//  이럴 경우, id 를 통해 select 후 없으면 insert 진행한다.
+	
+	//  전달되는 엔티티 객체에 id 가 없으면 insert (persist)
 	@Override
 	public Student insertStudent(Student student) {
 		// TODO Auto-generated method stub
