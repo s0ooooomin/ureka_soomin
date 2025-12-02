@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>login.html입니다.</h1>
+	<hr>
+	<div>
+		email : <input type="text" name="email" id="email">
+	</div>	
+	<div>
+		password : <input type="password" name="password" id="password" >
+	</div>
+	<button id="btnLogin">로그인</button>
+	
+	
+<script>
+	window.onload = function() {
+		document.querySelector("#btnLogin").onclick = login;
+	}
+
+	async function login() {
+		let email = document.querySelector("#email").value;
+		let password = document.querySelector("#password").value;
+		
+		let urlParams = new URLSearchParams({
+//			email:email,
+//			password:password, // 앞=객체 property : 뒤=현재 function 내 변수
+			email, password
+		});
+		
+		let url = "/auth/login";
+		let fetchOptions = {
+				method: "post",
+				body: urlParams,
+		}
+		
+		let response = await fetch(url, fetchOptions);
+		let data = await response.json(); // response에 담긴 json을 js Object로 변환?
+		console.log(data);
+
+		if (data.result == "success") {
+			// user roles 확인
+			let roles = data.userDto.roles;
+			console.log(roles);
+			// sessionStorage에 login 관련데이터 저장 (로그인했는지 확인)
+			// spa 가 아니라 , multiple html을 사용하므로 html 문서끼리 사전에 약속된 공간, 이름으로 관련 데이터 관리
+			sessionStorage.setItem("name", data.userDto.name); 
+			sessionStorage.setItem("email", data.userDto.email);
+			sessionStorage.setItem("roles", JSON.stringify(roles)); // 위에서 이미 받아둔 roles를 JSON화 
+			
+			
+			window.location.href="/index.html";
+		}else {
+			alert("로그인 실패\n이메일과 비밀번호를 확인해주세요");
+		}
+		
+	}
+
+</script>
+
+
+</body>
+</html>
