@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,49 +17,48 @@ import com.mycom.myapp.dto.StudentResultDto;
 import com.mycom.myapp.entity.Student;
 import com.mycom.myapp.service.StudentServiceCrud;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
-@RequestMapping("/api") // /api/v2.2 <= 버전 추가 가능
+@RequestMapping("/api/json") // /api/v2.2 <= 버전 추가 가능
 @RequiredArgsConstructor // serviceCrud 생성자 만들어줌
 
-@Tag(name="기본 Student CRUD REST API", description="Student 등록/수정/삭제/상세 조회 기능을 REST API로 제공합니다" )
-public class StudentControllerCRUD {
+// Swagger 관련 설정이 별도의 interface로 이동
+public class StudentControllerCRUDJsonRequest implements StudentControllerCRUDJsonRequestSwagger{
 
 	// StudentServiceCrud DI (생성자는 @RequiredArgs~ 가 만들어줌)
 	private final StudentServiceCrud studentServiceCrud;
 
 	// 목록 get /students (get 방식의 /students == list. post 방식의 /students == insert)
-	@Operation(summary="학생 목록", description="전체 학생 목록을 로드합니다.")
+	@Override
 	@GetMapping("/students")
 	public StudentResultDto listStudent() {
 		return studentServiceCrud.listStudent();
 	}
 	
 	// 상세 get /students/123
-	@Operation(summary="학생 상세", description="개별 학생을 조회합니다.", deprecated=true)
+	@Override
 	@GetMapping("/students/{id}")
 	public StudentResultDto detailStudent(@PathVariable("id") Integer id) {
 		return studentServiceCrud.detailStudent(id);
 	}
 	
 	// 등록 post /stuents
-	@Operation(summary="학생 등록", description="신규 학생을 등록합니다.", hidden=true)
+	@Override
 	@PostMapping("/students")
-	public StudentResultDto insertStudent(StudentDto studentDto) {
+	public StudentResultDto insertStudent(@RequestBody StudentDto studentDto) {
 		return studentServiceCrud.insertStudent(studentDto);
 	}
 	
 	// 수정 put /students
 	@PutMapping("/students/{id}")
-	public StudentResultDto updateStudent(@PathVariable("id") Integer id, StudentDto studentDto) {
+	public StudentResultDto updateStudent(@PathVariable("id") Integer id, @RequestBody StudentDto studentDto) {
 		// Parameter StudentDto 객체의 id 필드가 비어있을 수도 있으니 명시적 처리
 		// PathVaiable로 넘어오는 id를 우선시
-		studentDto.setId(id); // 있든없든 틀린 게 있을 수 있으니 set
+		System.out.println(studentDto);
+		//studentDto.setId(id); // 있든없든 틀린 게 있을 수 있으니 set
 		return studentServiceCrud.updateStudent(studentDto);
 	}
 	

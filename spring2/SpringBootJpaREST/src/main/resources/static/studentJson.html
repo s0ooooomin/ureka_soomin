@@ -47,7 +47,7 @@
 	
 		async function listStudent(){
 			
-			let url = '/api/students';
+			let url = '/api/json/students';
 			
 			try{
 				let response = await fetch(url);
@@ -87,7 +87,7 @@
 
 		async function detailStudent(id){
 		
-			let url = '/api/students/' + id;
+			let url = '/api/json/students/' + id;
 
 			try{
 				let response = await fetch(url);
@@ -95,8 +95,8 @@
 				let {dto} = await response.json(); // javascript es6 destruction 문법
 				makeDetailHtml( dto );
 			}catch(error){
-				console.log("detail error")
-				console.log(error)
+				console.log("detail error");
+				console.log(error);
 			}
 	
 		}
@@ -118,59 +118,73 @@
 			let email = document.querySelector("#inputEmail").value;
 			let phone = document.querySelector("#inputPhone").value;
 
-			let urlParams = new URLSearchParams({
-				name, email, phone   // javascript es6 shorthand property
-		    })
+// 			let urlParams = new URLSearchParams({
+// 				name, email, phone   // javascript es6 shorthand property
+// 		    })
+
+			// let jsonParams = JSON.stringify( 전달할 객체 )
+			let jsonParams = JSON.stringify({	name, email, phone	});
+			console.log(jsonParams);
 
 			let fetchOptions = {
 				method : "POST",
-		        body: urlParams,
+				headers : {
+					"Content-Type" : "application/json"
+				},
+		        body: jsonParams,
 			}
 			
-			let url = '/api/students';
+			let url = '/api/json/students';
 			
 			try{
-				let response = await fetch(url, fetchOptions)
+				let response = await fetch(url, fetchOptions);
 				let data = await response.json();
 				console.log(data);
+				
 				listStudent();
 				clear();
 			}catch(error){ // BE 404 에러는 이곳에
-				console.log(error)
+				console.log(error);
 			}
 		}
 
 		async function updateStudent(){
 
-			let url = '/api/students/' + CURRENT_ID;
+			let url = '/api/json/students/' + CURRENT_ID;
 
 			let id = CURRENT_ID;
 			let name = document.querySelector("#inputName").value;
 			let email = document.querySelector("#inputEmail").value;
 			let phone = document.querySelector("#inputPhone").value;
 			
-			let urlParams = new URLSearchParams({
-				id, name, email, phone
-		    })
+// 			let urlParams = new URLSearchParams({
+// 				id, name, email, phone
+// 		    })
+// 			let jsonParams = JSON.stringify({	name, email, phone	});
+			let jsonParams = JSON.stringify({	id,name, email, phone	});
+			console.log(jsonParams);
 			
 			let fetchOptions = {
 				method : "PUT",
-		        body: urlParams,
+				headers : {
+					"Content-Type" : "application/json"
+				},
+		        body: jsonParams,
 			}
 			
 			try{
-				let response = await fetch(url, fetchOptions)
+				let response = await fetch(url, fetchOptions);
 				let data = await response.json();
 				console.log(data);
 				listStudent();
 				clear();
 			}catch(error){
-				console.log(error)
+				console.log(error);
 			}
 		}
 		
 		async function deleteStudent(){
-			let url = '/api/students/' + CURRENT_ID;
+			let url = '/api/json/students/' + CURRENT_ID;
 
 			let fetchOptions = {
 				method : "DELETE",

@@ -92,6 +92,7 @@ public class StudentServiceCRUDImpl implements StudentServiceCrud{
 		
 		// StudentDto -> student
 		Student student = Student.builder()
+								.id(studentDto.getId())
 								.name(studentDto.getName()) // id X why? id는 autogenerate (insert에서는 입력X)
 								.email(studentDto.getEmail())
 								.phone(studentDto.getPhone())
