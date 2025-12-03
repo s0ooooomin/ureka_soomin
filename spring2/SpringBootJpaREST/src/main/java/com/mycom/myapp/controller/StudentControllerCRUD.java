@@ -40,7 +40,7 @@ public class StudentControllerCRUD {
 	}
 	
 	// 상세 get /students/123
-	@Operation(summary="학생 상세", description="개별 학생을 조회합니다.", deprecated=true)
+	@Operation(summary="학생 상세", description="개별 학생을 조회합니다.")
 	@GetMapping("/students/{id}")
 	public StudentResultDto detailStudent(@PathVariable("id") Integer id) {
 		return studentServiceCrud.detailStudent(id);
