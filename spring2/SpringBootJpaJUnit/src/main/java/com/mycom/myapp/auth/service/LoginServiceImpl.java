@@ -32,10 +32,10 @@ public class LoginServiceImpl implements LoginService{
 		
 		// #2. 3번 사용자 -> hardcoding value로 기본 제공되는 findById(3)
 		// User id로 찾으면 이미 user_user_roles에 필요한 id get! -> 바로 join (EAGER fetch)
-//		Optional<User> optionalUser = userRepository.findById(3L);
+//		Optional<User> optionalUser = userRepository.findById(email);
 		
 		// #3. findByEmail() + JPQL (@Query)
-//		Optional<User> optionalUser = userRepository.findById(3L);
+//		Optional<User> optionalUser = userRepository.findById(email);
 		
 		
 		if( optionalUser.isPresent() ) {
