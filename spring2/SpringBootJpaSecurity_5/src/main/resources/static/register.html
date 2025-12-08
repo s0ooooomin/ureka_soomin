@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>register.html입니다.</h1>
+	<hr>
+
+	name 	 : <input type="text" id="name" name="name"><br>
+	email 	 : <input type="text" id="email" name="email"><br>
+	password : <input type="password" id="password" name="password"><br> <!-- 비밀번호확인은 사용X -->
+	
+	<!-- csrf token -->
+	<input type="hidden" id="_csrf" name="_csrf" value=""><br>
+	
+	<button id="btnRegister">Register</button>
+	
+<script>
+	window.onload = function(){
+		getCsrfToken();
+		
+		document.querySelector("#btnRegister").onclick = register;
+	}
+	
+	// csrf controller 에 token 요청
+	async function getCsrfToken(){
+		let response = await fetch("/csrf-token", {method: "get", credentials: "same-origin"});
+		console.log(response);
+		let data = await response.json();
+		console.log(data);
+		document.querySelector("#_csrf").value = data.token;
+	}
+	
+	// 로그인 
+	async function register(){
+		
+		let url = "/users"; // post 방식으로 /users : insertUser
+		
+		let name 	= document.querySelector("#name").value;
+		let email 		= document.querySelector("#email").value;
+		let password 	= document.querySelector("#password").value;
+		let _csrf 	= document.querySelector("#_csrf").value;
+		
+		let urlParams = new URLSearchParams({
+			name, email, password, _csrf  // javascript es6 shorthand property 문법
+		});
+		
+		let fetchOptions = {
+			method: "post",
+			body: urlParams
+		}
+		
+		let response = await fetch(url, fetchOptions);
+		let data = await response.json();
+		
+		console.log(data);
+		
+		if (data.result == "success") {
+			alert("회원가입 되었습니다. \n로그인 페이지로 이동합니다.")
+			window.location.href="/login";
+		}else {
+			alert("회원가입 도중 오류가 발생했습니다💥")
+		}
+		
+		
+	}
+	
+</script>	
+</body>
+</html>
+<!-- csrf 설정 후 받은 token을 전송해야함 
+	login2.html로 변경 후 새로운 login.html 생성
+ -->

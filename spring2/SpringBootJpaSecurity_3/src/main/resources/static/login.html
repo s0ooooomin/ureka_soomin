@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>login.html이에요.</h1>
+	<hr>
+	<!-- 
+		로그인 시점에 발생되는 csrf token 을 미리 발급받기 -> 로그인과 동시에 전송 ( 안그러면 무한루프? 아무것도 안 됨 )
+		백엔드의 csrf Controller 에 요청
+	-->
+	<form action="/login" method="post">
+		<input type="text" id="username" name="username" value="dskim"><br>
+		<input type="text" id="password" name="password" value="1234"><br>
+		<!-- csrf token -->
+		<input type="hidden" id="_csrf" name="_csrf" value=""><br>
+
+		<button type="submit">Login</button>
+	</form>
+<script>
+	window.onload = function() {
+		getCsrfToken();
+	}
+	
+	// csrf controller에 token 요청
+	async function getCsrfToken() {
+		let response = await fetch("/csrf-token", {method:"get", credential:"same-origin"});
+		let data = await response.json();
+		console.log(data);
+		document.querySelector("#_csrf").value = data.token; // 먼저 존재하다가 login 버튼 누르면 같이 전송됨
+	}
+
+
+</script>
+</body>
+</html>
+<!-- csrf 설정 후 받은 token을 전송해야함 
+	login2.html로 변경 후 새로운 login.html 생성
+ -->
