@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>login.html</h1>
+	<hr>
+	<div>
+		email : <input type="text" name="email" id="email" value="user3@mycom.com">
+	</div>
+	<div>
+		password : <input type="password" name="password" id="password" value="password3">
+	</div>
+	<button id = "btnLogin">로그인</button>
+	
+	
+<script>
+	window.onload = function() {
+		document.querySelector("#btnLogin").onclick = login;
+	}
+	
+	async function login() {
+		let email = document.querySelector("#email").value;
+		let password = document.querySelector("#password").value;
+		
+		let urlParams = new URLSearchParams({
+			email, password
+		});
+		
+		let url = "/auth/login";
+		let fetchOptions = {
+				method: "post",
+				body: urlParams,
+		}
+		
+		let response = await fetch(url, fetchOptions);
+		let data = await response.json();
+		console.log(data);
+		
+		if (data.result == "success"){
+			let roles = data.userDto.roles;
+			console.log(roles);
+			
+			sessionStorage.setItem("name", data.userDto.name); 
+			sessionStorage.setItem("email", data.userDto.email);
+			sessionStorage.setItem("roles", JSON.stringify(roles));
+		
+			window.location.href="/index.html";
+		}else {
+			alert("로그인 실패\n이메일과 비밀번호를 확인해주세요");
+		}
+		
+		
+		
+	}
+
+
+</script>
+
+</body>
+</html>

@@ -21,7 +21,7 @@ public class LoginController {
 	
 	@PostMapping("/login")
 	public UserResultDto login(
-		@RequestParam("email") String email,
+		@RequestParam("phone") String email,
 		@RequestParam("password") String password,
 		HttpSession session
 			) {
